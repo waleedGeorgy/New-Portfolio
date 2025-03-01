@@ -10,7 +10,7 @@ import { SiMinutemailer } from "react-icons/si";
 import { GiThink } from "react-icons/gi";
 import { FormEvent, useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaArrowDown, FaSkype } from "react-icons/fa6";
+import { FaSkype } from "react-icons/fa6";
 import emailjs from "@emailjs/browser"
 
 export default function ContactMe() {
