@@ -1,13 +1,13 @@
-import TwoDoImage from "@/public/assets/images/gallery_swiper/2do.png";
-import BlogbusterImage from "@/public/assets/images/gallery_swiper/blogbuster.png";
-import BooksImage from "@/public/assets/images/gallery_swiper/books.png";
-import JokerImage from "@/public/assets/images/gallery_swiper/joker.png";
-import NotedImage from "@/public/assets/images/gallery_swiper/noted.png";
-import PersonalWebsiteImage from "@/public/assets/images/gallery_swiper/personalwebsite.png";
-import TravelTrackerImage from "@/public/assets/images/gallery_swiper/traveltracker.png";
-import EnoughTeaImage from "@/public/assets/images/gallery_swiper/enoughtea.png";
-import Food101Image from "@/public/assets/images/gallery_swiper/food101.png";
-import SimoneGameImage from "@/public/assets/images/gallery_swiper/simone-game.png";
+import TwoDoImage from "@/public/assets/images/gallery_swiper/2do.webp";
+import BlogbusterImage from "@/public/assets/images/gallery_swiper/blogbuster.webp";
+import BooksImage from "@/public/assets/images/gallery_swiper/books.webp";
+import JokerImage from "@/public/assets/images/gallery_swiper/joker.webp";
+import NotedImage from "@/public/assets/images/gallery_swiper/noted.webp";
+import PersonalWebsiteImage from "@/public/assets/images/gallery_swiper/personalwebsite.webp";
+import TravelTrackerImage from "@/public/assets/images/gallery_swiper/traveltracker.webp";
+import EnoughTeaImage from "@/public/assets/images/gallery_swiper/enoughtea.webp";
+import Food101Image from "@/public/assets/images/gallery_swiper/food101.webp";
+import SimoneGameImage from "@/public/assets/images/gallery_swiper/simone-game.webp";
 
 const gallery_images = [
     {

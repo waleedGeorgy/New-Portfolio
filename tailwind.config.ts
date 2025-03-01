@@ -23,9 +23,7 @@ export default {
           foreground: "rgba(255,255,255,0.4)",
         },
         blue: {
-          joust: "#56acff",
           cosmos: "#003049",
-          hera: "#7179ef",
         },
         green: {
           benzol: "#00d372",
@@ -42,9 +40,14 @@ export default {
         "noise": "url(/assets/images/noise-bg.png)",
       },
       animation: {
-        "noise-bg": "noise 1s steps(2) infinite"
+        "noise-bg": "noise 1s steps(2) infinite",
+        "grow_in": "grow_in 0.5s ease-in-out"
       },
       keyframes: {
+        grow_in: {
+          '0%': { scale: '0%' },
+          '100%': { scale: '100%' },
+        },
         noise: {
           "0%": {
             transform: "translate3d(0, 9rem, 0)",

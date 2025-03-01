@@ -16,7 +16,7 @@ export default function Resume() {
             {/* Social links */}
             <div className="flex items-center justify-between md:absolute md:bottom-4 md:left-6 md:w-[calc(100%-48px)]">
                 <Socials />
-                <Link href="https://drive.google.com/file/d/1bvkkTOmPQbg85zQaC_rdAn0fbv5F_MBS/view?usp=sharing" target="_blank" download><Button className="bg-blue-cosmos text-primary-foreground tracking-wide text-lg shadow-md shadow-black"><FaFileDownload />Resumé</Button></Link>
+                <Link href="https://drive.google.com/file/d/1PwSQguwLiOCP_ZHCSg7bL6hOw4AKSGnn/view?usp=sharing" target="_blank" download><Button className="bg-blue-cosmos text-primary-foreground tracking-wide text-lg shadow-md shadow-black animate-bounce"><FaFileDownload />Resumé</Button></Link>
             </div>
         </Card>
     );

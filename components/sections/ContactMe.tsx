@@ -36,9 +36,9 @@ export default function ContactMe() {
         <div className="pt-24 px-3 lg:px-8 mb-8" id="contactMe">
             <SectionTitle number="03" title="Contact Me" />
             <Card title="">
-                <div className="grid gap-6 grid-cols-1 lg:grid-cols-3">
+                <div className="grid gap-y-4 lg:gap-x-4 grid-cols-1 lg:grid-cols-3">
                     {/* Left side */}
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col items-stretch gap-y-4">
                         <ContactCard
                             icon={<MdEmail size={25} color="#EA4335" />}
                             text="waleedgeorge1009@gmail.com"
@@ -61,7 +61,7 @@ export default function ContactMe() {
                     {/* right side */}
                     <form ref={formRef} onSubmit={sendEmail} className="col-span-2 bg-secondary-background border border-border rounded-lg space-y-6 relative overflow-hidden py-5 px-[25px] shadow-md">
                         {/* Personal data inputs */}
-                        <p className="text-[20px] flex flex-row justify-center items-center gap-x-3">Send me a pre-custom email <FaArrowDown /></p>
+                        <p className="text-[20px] lg:text-center text-left font-bold">Send me a pre-custom email</p>
                         <div className="flex flex-col lg:flex-row items-center justify-between mb-4 gap-8">
                             <Input type="text" name="name" placeholder="Full Name*" icon={<FaUser />} />
                             <Input type="email" name="email" placeholder="Email Address*" icon={<MdEmail size={19} />} />

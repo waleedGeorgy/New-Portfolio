@@ -27,7 +27,7 @@ export default function Header(){
 
     return (
         <div className="w-full flex items-center justify-between">
-            <div className="relative left-[calc(50%-135px)] md:left-0">
+            <div className="relative left-[calc(50%-140px)] md:left-0">
                 <ProfilePhoto />
             </div>
             <div className="hidden md:inline">
