@@ -6,10 +6,10 @@ import NavLink from "./nav-link";
 import Link from "next/link";
 import GitHub from "@/public/assets/images/stack/github.svg";
 import Image from "next/image";
-import { FC } from "react";
+import { Dispatch, FC, SetStateAction } from "react";
 
 interface FullScreenMenuProps {
-  setOpen: any
+  setOpen: Dispatch<SetStateAction<boolean>>
 }
 
 const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
@@ -32,7 +32,7 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
       {/* Menu list*/}
       <div className="absolute pl-10 md:pr-14 py-4 bottom-36 w-full font-homenaje bg-gradient-to-r from-black to-blue-cosmos">
         <div className="grid relative">
-          <div className="flex flex-col justify-center items-start md:items-end" onClick={() => setOpen((prev: any) => !prev)}>
+          <div className="flex flex-col justify-center items-start md:items-end" onClick={() => setOpen(prev => !prev)}>
             {navItems.map((item, index) => (
               <NavLink key={index} data={{ ...item, index }} />
             ))}

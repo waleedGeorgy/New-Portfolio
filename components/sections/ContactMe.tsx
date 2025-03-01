@@ -8,7 +8,7 @@ import TextArea from "../TextArea";
 import Button from "../Button";
 import { SiMinutemailer } from "react-icons/si";
 import { GiThink } from "react-icons/gi";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowDown, FaSkype } from "react-icons/fa6";
 import emailjs from "@emailjs/browser"

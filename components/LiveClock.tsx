@@ -11,7 +11,7 @@ const LiveClock: FC<LiveClockProps> = ({timeZone}) => {
     {/* Initializing and running the clock */}
     useEffect(() => {
         const updateTime = () => {
-            let currentTime = new Date().toLocaleString([], {timeZone: timeZone, hour:"2-digit", minute:"2-digit", hour12: false});
+            const currentTime = new Date().toLocaleString([], {timeZone: timeZone, hour:"2-digit", minute:"2-digit", hour12: false});
             setTime(currentTime);
         };
         const interval = setInterval(updateTime, 1000);

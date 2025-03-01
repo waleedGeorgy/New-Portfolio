@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PT_Sans, Homenaje } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Background from "@/components/Noise-Background";
