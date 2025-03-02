@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MyImage from "@/public/assets/images/profile-pic.png";
+import MyImage from "@/public/assets/images/profile-pic.webp";
 
 export default function ProfilePhoto(){
     return (

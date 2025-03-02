@@ -30,7 +30,7 @@ const NavLink: FC<NavLinkProps> = ({ data }) => {
         animate={hovered ? "open" : "closed"}
         className="w-2.5 h-2.5 bg-white rounded-full absolute -left-[30px]"
       ></motion.div>
-      <Link href={href} className="text-[12vw] xs:text-[10vw] md:text-[7vw] uppercase leading-[96%] font-bold text-primary-foreground">
+      <Link href={href} className="text-[3.5rem] xs:text-[7vw] uppercase leading-[96%] font-bold text-primary-foreground">
         {title}
       </Link>
     </motion.div>

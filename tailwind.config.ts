@@ -37,7 +37,7 @@ export default {
         border: "rgb(255 255 255 / 0.05)",
       },
       backgroundImage: {
-        "noise": "url(/assets/images/noise-bg.png)",
+        "noise": "url(/assets/images/noise-bg.webp)",
       },
       animation: {
         "noise-bg": "noise 1s steps(2) infinite",

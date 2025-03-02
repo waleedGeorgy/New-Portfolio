@@ -24,15 +24,15 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
 
       {/*Profile picture and name*/}
       <div className="relative w-full pl-8">
-        <div className="absolute top-8">
+        <div className="hidden xs:block absolute top-32 xs:top-8 xs:scale-100 scale-75">
           <ProfilePhoto />
         </div>
       </div>
 
       {/* Menu list*/}
-      <div className="absolute pl-10 md:pr-14 py-4 bottom-36 w-full font-homenaje bg-gradient-to-r from-black to-blue-cosmos">
+      <div className="absolute top-40 pr-6 xs:pr-14 py-4  w-full font-homenaje bg-gradient-to-r from-black to-blue-cosmos">
         <div className="grid relative">
-          <div className="flex flex-col justify-center items-start md:items-end" onClick={() => setOpen(prev => !prev)}>
+          <div className="flex flex-col justify-center items-end" onClick={() => setOpen(prev => !prev)}>
             {navItems.map((item, index) => (
               <NavLink key={index} data={{ ...item, index }} />
             ))}
@@ -42,7 +42,7 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
       
       {/* Footer */}
       <div className="w-full absolute bottom-6 px-6">
-        <div className="flex flex-wrap items-center justify-start gap-8">
+        <div className="flex flex-wrap items-center justify-start gap-x-6 gap-y-4">
           <div className="flex items-center gap-3 text-secondary-foreground hover:text-white transition-colors duration-200 ease-in-out">
             <Link href="/"><Image src={GitHub} alt="GitHub icon" /></Link>
             <Link href="/"><span className="capitalize link">GitHub</span></Link>

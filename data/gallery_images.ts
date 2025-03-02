@@ -37,7 +37,7 @@ const gallery_images = [
     {
         image: NotedImage,
         title: "Noted",
-        link: "https://github.com/waleedGeorgy/Noted",
+        link: "https://waleedgeorgy.github.io/Noted/",
         tag: "A website for taking and managing notes",
     },
     {

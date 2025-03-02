@@ -5,7 +5,7 @@ export default function ToggleButton({open, setOpen}: {open: boolean; setOpen: D
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="animate-grow_in shadow-md shadow-black fixed right-4 top-5 m-5 z-50 w-16 h-16 rounded-full bg-[#323E56] cursor-pointer hover:bg-[#4c5c7c] transition-colors duration-200 ease-in-out"
+      className="animate-grow_in shadow-md shadow-black fixed right-4 top-5 m-5 z-50 w-16 h-16 rounded-full bg-blue-cosmos cursor-pointer hover:bg-[#4c5c7c] transition-colors duration-200 ease-in-out"
     >
       <div className="relative flex items-center justify-center">
         <div className="flex flex-col gap-y-2 w-[30px]  transform transition-all duration-300 origin-center overflow-hidden">

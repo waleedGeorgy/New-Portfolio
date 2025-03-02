@@ -1,6 +1,6 @@
 import Card from "@/components/Card";
 import Image from "next/image";
-import MyImage from "@/public/assets/images/profile-pic.png";
+import MyImage from "@/public/assets/images/profile-pic.webp";
 import { cn } from "@/lib/utils";
 
 export default function Me() {
