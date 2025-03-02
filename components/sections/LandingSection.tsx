@@ -11,7 +11,7 @@ export default function LandingArea(){
             <Header />
             {/* Special magnetic button */}
             <MagneticEffect className="md:hidden absolute z-10 bottom-[4.5rem] left-0 right-0 mx-auto w-fit">
-                <SpecialButton text="Contact Me" icon={<FaArrowAltCircleRight />} />
+                <SpecialButton link="/#contactMe" text="Contact Me" icon={<FaArrowAltCircleRight />} />
             </MagneticEffect>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xs:mt-0 mt-5 h-[20rem]">
                 {/* Main Text */}

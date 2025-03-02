@@ -38,7 +38,7 @@ export default function ContactMe() {
             <Card title="">
                 <div className="grid gap-y-4 lg:gap-x-4 grid-cols-1 lg:grid-cols-3">
                     {/* Left side */}
-                    <div className="flex flex-col items-stretch gap-y-4">
+                    <div className="flex flex-col items-stretch gap-y-5">
                         <ContactCard
                             icon={<MdEmail size={25} color="#EA4335" />}
                             text="waleedgeorge1009@gmail.com"
@@ -71,7 +71,7 @@ export default function ContactMe() {
                         </div>
                         {/* Text area section */}
                         <TextArea name="message" placeholder="What do you have in mind?*" icon={<GiThink size={23} />} />
-                        <div className="w-full flex justify-end">
+                        <div className="w-full flex justify-center md:justify-end">
                             <div onClick={() => btnRef.current?.click()}>
                                 <Button className="!w-44 !py-3 !text-xl">Send <SiMinutemailer /></Button>
                             </div>

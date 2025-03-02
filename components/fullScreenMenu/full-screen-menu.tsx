@@ -41,11 +41,11 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
       </div>
       
       {/* Footer */}
-      <div className="w-full absolute bottom-6 px-6">
-        <div className="flex flex-wrap items-center justify-start gap-x-6 gap-y-4">
+      <div className="w-full absolute bottom-8 px-6">
+        <div className="flex flex-wrap items-center justify-start gap-x-8 gap-y-4">
           <div className="flex items-center gap-3 text-secondary-foreground hover:text-white transition-colors duration-200 ease-in-out">
-            <Link href="/"><Image src={GitHub} alt="GitHub icon" /></Link>
-            <Link href="/"><span className="capitalize link">GitHub</span></Link>
+            <Link href="https://github.com/waleedGeorgy/New-Portfolio" target="_blank"><Image src={GitHub} alt="GitHub icon" className="cursor-pointer" /></Link>
+            <Link href="https://github.com/waleedGeorgy/New-Portfolio" target="_blank"><span className="capitalize link cursor-pointer">GitHub</span></Link>
           </div>
           <div className="flex items-center text-secondary-foreground">
             <Link href="/">All Rights Reserved ©{new Date().getFullYear()}</Link>
