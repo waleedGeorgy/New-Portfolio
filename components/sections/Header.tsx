@@ -27,11 +27,11 @@ export default function Header(){
 
     return (
         <div className="w-full flex items-center justify-between">
-            <div className="relative left-[calc(50%-140px)] md:left-0 [@media(max-height:420px)]:left-0">
+            <div className="relative left-[calc(50%-140px)] md:left-0 [@media(max-height:420px)]:left-0 [@media(max-height:420px)]:bottom-6">
                 <ProfilePhoto />
             </div>
             <div className="hidden md:inline [@media(max-height:420px)]:scale-75">
-                <MagneticEffect>
+                <MagneticEffect className="[@media(max-height:420px)]:bottom-8 [@media(max-height:420px)]:-right-10">
                     <SpecialButton text="Contact Me" icon={<FaArrowAltCircleRight />} link="/#contactMe" />
                 </MagneticEffect>
             </div>
