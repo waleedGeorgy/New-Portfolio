@@ -24,7 +24,7 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
 
       {/*Profile picture and name*/}
       <div className="relative w-full pl-8 z-10">
-        <div className="hidden xs:block absolute top-32 xs:top-8 xs:scale-100 scale-75">
+        <div className="hidden xs:block absolute top-32 xs:top-8 xs:scale-100 scale-75 [@media(max-height:500px)]:hidden">
           <ProfilePhoto />
         </div>
       </div>
