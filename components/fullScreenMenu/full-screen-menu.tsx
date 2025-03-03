@@ -23,14 +23,14 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
     >
 
       {/*Profile picture and name*/}
-      <div className="relative w-full pl-8">
+      <div className="relative w-full pl-8 z-10">
         <div className="hidden xs:block absolute top-32 xs:top-8 xs:scale-100 scale-75">
           <ProfilePhoto />
         </div>
       </div>
 
       {/* Menu list*/}
-      <div className="absolute top-40 pr-6 xs:pr-14 py-4  w-full font-homenaje bg-gradient-to-r from-black to-blue-cosmos">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-6 xs:pr-14 py-4 w-full font-homenaje bg-gradient-to-r from-black to-blue-cosmos">
         <div className="grid relative">
           <div className="flex flex-col justify-center items-end" onClick={() => setOpen(prev => !prev)}>
             {navItems.map((item, index) => (
@@ -41,7 +41,7 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({setOpen}) => {
       </div>
       
       {/* Footer */}
-      <div className="w-full absolute bottom-8 px-6">
+      <div className="w-full absolute bottom-8 px-6 [@media(max-height:430px)]:hidden">
         <div className="flex flex-wrap items-center justify-start gap-x-8 gap-y-4">
           <div className="flex items-center gap-3 text-secondary-foreground hover:text-white transition-colors duration-200 ease-in-out">
             <Link href="https://github.com/waleedGeorgy/New-Portfolio" target="_blank"><Image src={GitHub} alt="GitHub icon" className="cursor-pointer" /></Link>

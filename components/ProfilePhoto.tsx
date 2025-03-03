@@ -3,7 +3,7 @@ import MyImage from "@/public/assets/images/profile-pic.webp";
 
 export default function ProfilePhoto(){
     return (
-        <div className="flex items-center gap-x-2 text-primary-foreground">
+        <div className="flex items-center gap-x-2 text-primary-foreground [@media(max-height:420px)]:scale-75 [@media(max-height:420px)]:relative [@media(max-height:420px)]:-left-10">
             {/* Profile photo with outline */}
             <div className="relative sm:w-[95px] sm:h-[95px] w-[90px] h-[90px] rounded-full flex items-center justify-center bg-gradient-to-br from-purple-darkness to-yellow-ripe">
                 <Image src={MyImage} alt="Waleed Georgy image"
