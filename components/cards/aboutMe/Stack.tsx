@@ -32,9 +32,9 @@ export default function Stack(){
             <div className="flex flex-col gap-5 mt-2">
                 {
                     myStack.map((item, i) => (
-                        <div key={i} className="grid items-center gap-[37px]" style={{gridTemplateColumns: "50px 1fr"}}>
+                        <div key={i} className="grid items-center gap-9" style={{gridTemplateColumns: "50px 1fr"}}>
                             {/* Stack type */}
-                            <div className="h-auto flex-wrap break-words whitespace-pre">
+                            <div className="flex flex-wrap break-words whitespace-pre">
                                 <p className="text-secondary-foreground">{item.name}</p>
                             </div>
                             {/* Individual stack item */}

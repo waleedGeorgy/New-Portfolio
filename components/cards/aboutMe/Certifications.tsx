@@ -1,7 +1,6 @@
 import Card from "@/components/Card";
 import Timeline, { TimelineItem } from "@/components/Timeline";
 
-
 export default function Certifications() {
     return (
         <Card title="Certifications & Professional Development">

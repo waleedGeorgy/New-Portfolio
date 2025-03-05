@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect, useState } from "react"
+import { FC, useEffect, useState } from "react";
 
 interface LiveClockProps {
     timeZone: string

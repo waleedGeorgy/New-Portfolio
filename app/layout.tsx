@@ -6,7 +6,7 @@ import Background from "@/components/Noise-Background";
 import Cursor from "@/components/animations/AnimatedCursor";
 
 const MainFont = PT_Sans({weight:"400", subsets:["latin"]});
-const OswaldFont = Homenaje({weight:"400", subsets:["latin"], variable: "--font-homenaje"});
+const HomenajeFont = Homenaje({weight:"400", subsets:["latin"], variable: "--font-homenaje"});
 
 export const metadata: Metadata = {
   title: "Waleed Georgy",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(MainFont.className, OswaldFont.variable)}>
+      <body className={cn(MainFont.className, HomenajeFont.variable)}>
         <Background />
         <Cursor color="whitesmoke" />
         {children}

@@ -3,7 +3,7 @@ import { FC, ReactNode } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { cn } from "@/lib/utils";
 
-// Main Timeline component =====================
+// Main Timeline component
 interface TimelineProps {
     children: ReactNode
 };
@@ -16,7 +16,7 @@ const Timeline: FC<TimelineProps> = ({children}) => {
 
 export default Timeline;
 
-// Timeline item component =====================
+// Timeline item component
 interface TimelineItemProps {
     date: string,
     title: string,
@@ -50,7 +50,7 @@ export const TimelineItem: FC<TimelineItemProps> = ({date, title, subtitle, link
     );
 };
 
-// Timeline item subtitle component =====================
+// Timeline item subtitle component
 interface TimelineSubtitleProps {
     subtitle: string,
     tag?: string,

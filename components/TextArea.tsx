@@ -1,9 +1,9 @@
 import { FC, ReactNode } from "react";
 
 interface TextAreaProps {
-    icon?: ReactNode,
+    name: string,
     placeholder: string,
-    name: string
+    icon?: ReactNode
 }
 
 const TextArea: FC<TextAreaProps> = ({icon, placeholder, name}) => {

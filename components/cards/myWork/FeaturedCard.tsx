@@ -14,9 +14,7 @@ const FeaturedCard: FC<FeaturedCardProps> = ({title, tag, photo, link}) => {
     return(
         <div className="bg-secondary-background flex flex-col gap-2 flex-wrap p-2">
             <FeaturedCardHeader title={title} tag={tag} link={link} />
-            <div className="items-center justify-center">
-                <Image src={photo} alt={tag} className="rounded-lg" />
-            </div>
+            <Image src={photo} alt={tag} className="rounded-lg" />
         </div>
     );
 };

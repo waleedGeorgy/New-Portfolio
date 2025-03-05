@@ -10,7 +10,7 @@ import { SiMinutemailer } from "react-icons/si";
 import { GiThink } from "react-icons/gi";
 import { FormEvent, useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaSkype } from "react-icons/fa6";
+import { BsMicrosoftTeams } from "react-icons/bs";
 import emailjs from "@emailjs/browser"
 
 export default function ContactMe() {
@@ -52,10 +52,10 @@ export default function ContactMe() {
                             link="https://api.whatsapp.com/send?phone=79887907201"
                         />
                         <ContactCard
-                            icon={<FaSkype size={25} color="#00AFF0" />}
-                            text="@Waleed Georgee"
+                            icon={<BsMicrosoftTeams size={25} color="#7B83EB" />}
+                            text="Waleed Georgy"
                             btnText="Contact"
-                            link="https://join.skype.com/invite/Mpuf6eBfBMFO"
+                            link="https://teams.live.com/l/invite/FEA0l_qcRi3nP3b1AM"
                         />
                     </div>
                     {/* right side */}

@@ -11,6 +11,7 @@ interface InputSelectionProps {
 
 const InputSelection: FC<InputSelectionProps> = ({type, id, text, selectedOptions, setSelectedOptions, allowMultiple}) => {
     const handleOptionsChange = (option: string) => {
+        {/* Handle whether the selection is radio or checkbox */}
         if (allowMultiple){
             const currentIndex = selectedOptions.indexOf(option);
             const newSelectedOptions = [...selectedOptions];

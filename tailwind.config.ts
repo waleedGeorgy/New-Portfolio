@@ -42,7 +42,7 @@ export default {
       animation: {
         "noise-bg": "noise 1s steps(2) infinite",
         "grow_in": "grow_in 0.5s ease-in-out",
-        wiggle: 'wiggle 2s ease-in-out infinite',
+        wiggle: 'wiggle 1s ease-in-out infinite',
       },
       keyframes: {
         grow_in: {
@@ -52,10 +52,10 @@ export default {
 
         wiggle: {
           '0%, 100%': {
-              transform: 'rotate(-8deg)'
+              transform: 'rotate(-3deg)'
           },
           '50%': {
-              transform: 'rotate(8deg)'
+              transform: 'rotate(3deg)'
           },
         },
         
