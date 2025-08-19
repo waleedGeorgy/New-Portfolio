@@ -10,9 +10,12 @@ import Next from "@/public/assets/images/stack/nextdotjs.svg";
 import Node from "@/public/assets/images/stack/nodedotjs.svg";
 import Express from "@/public/assets/images/stack/express.svg";
 import PostgreSQL from "@/public/assets/images/stack/postgresql.svg";
+import MongoDB from "@/public/assets/images/stack/mongodb.svg";
+import Prisma from "@/public/assets/images/stack/prisma.svg";
 import Motoko from "@/public/assets/images/stack/motoko.webp";
 import EJS from "@/public/assets/images/stack/ejs.svg";
 import MUI from "@/public/assets/images/stack/mui.svg";
+import Shadcn from "@/public/assets/images/stack/shadcnui.svg";
 import Tailwind from "@/public/assets/images/stack/tailwindcss.svg";
 import SASS from "@/public/assets/images/stack/sass.svg";
 import TensorFlow from "@/public/assets/images/stack/tensorflow.svg";
@@ -26,13 +29,13 @@ import ICP from "@/public/assets/images/stack/internetcomputer.svg";
 import Card from "@/components/Card";
 import Tooltip from "@/components/Tooltip";
 
-export default function Stack(){
+export default function Stack() {
     return (
         <Card title="My Stack">
             <div className="flex flex-col gap-5 mt-2">
                 {
                     myStack.map((item, i) => (
-                        <div key={i} className="grid items-center gap-9" style={{gridTemplateColumns: "50px 1fr"}}>
+                        <div key={i} className="grid items-center gap-9" style={{ gridTemplateColumns: "50px 1fr" }}>
                             {/* Stack type */}
                             <div className="flex flex-wrap break-words whitespace-pre">
                                 <p className="text-secondary-foreground">{item.name}</p>
@@ -94,7 +97,7 @@ export const myStack = [
                 title: "Java",
                 icon: Java
             },
-            
+
         ]
     },
     {
@@ -105,11 +108,6 @@ export const myStack = [
                 title: "ReactJS",
                 icon: React
             },
-            {
-                id: 1,
-                title: "NextJS",
-                icon: Next
-            }
         ]
     },
     {
@@ -132,13 +130,43 @@ export const myStack = [
             },
             {
                 id: 3,
+                title: "Motoko",
+                icon: Motoko
+            }
+        ]
+    },
+    {
+        name: "Fullstack",
+        stack: [
+            {
+                id: 1,
+                title: "NextJS",
+                icon: Next
+            }
+        ]
+    },
+    {
+        name: "DBMSs",
+        stack: [
+            {
+                id: 0,
                 title: "PostgreSQL",
                 icon: PostgreSQL
             },
             {
-                id: 4,
-                title: "Motoko",
-                icon: Motoko
+                id: 1,
+                title: "MongoDB",
+                icon: MongoDB
+            },
+        ]
+    },
+    {
+        name: "ORMs",
+        stack: [
+            {
+                id: 0,
+                title: "Prisma",
+                icon: Prisma
             }
         ]
     },
@@ -159,6 +187,11 @@ export const myStack = [
                 id: 2,
                 title: "SASS",
                 icon: SASS
+            },
+            {
+                id: 3,
+                title: "Shadcn",
+                icon: Shadcn
             }
         ]
     },
