@@ -7,6 +7,7 @@ import Education from "../cards/aboutMe/Education";
 import Certifications from "../cards/aboutMe/Certifications";
 import Links from "../cards/aboutMe/Links";
 import Stack from "../cards/aboutMe/Stack";
+import Contact from "../cards/aboutMe/Contact";
 
 export default function AboutSection() {
     return (
@@ -22,6 +23,7 @@ export default function AboutSection() {
                     <Links />
                     <Certifications />
                     <Stack />
+                    <Contact />
                 </div>
             </div>
         </div>

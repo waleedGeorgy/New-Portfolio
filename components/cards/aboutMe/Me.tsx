@@ -21,7 +21,7 @@ export default function Me() {
     );
 }
 
-const SmallTag = ({text, className} : {text: string, className?: string}) => {
+const SmallTag = ({ text, className }: { text: string, className?: string }) => {
     return (
         <div className={cn("bg-black/[0.7] w-fit py-1.5 px-2.5 rounded-2xl", className)}>
             <p className="text-primary-foreground leading-[110%]">{text}</p>

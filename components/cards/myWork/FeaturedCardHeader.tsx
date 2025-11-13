@@ -13,7 +13,7 @@ const FeaturedCardHeader: FC<FeaturedCardHeaderProps> = ({title, tag, link}) => 
             {/* Featured card title (left side) */}
             <Link href={link} target="_blank"><p className="text-xl cursor-pointer font-homenaje tracking-wide underline text-primary-foreground">{title}</p></Link>
             {/* Featured card tag (right side) */}
-            <p className="text-base text-secondary-foreground">{tag}</p>
+            <p className="text-sm text-secondary-foreground">{tag}</p>
         </div>
     );
 }

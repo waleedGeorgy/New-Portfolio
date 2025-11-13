@@ -4,13 +4,13 @@ import JS from "@/public/assets/images/stack/javascript.svg";
 import JQuery from "@/public/assets/images/stack/jquery.svg";
 import TS from "@/public/assets/images/stack/typescript.svg";
 import Python from "@/public/assets/images/stack/python.webp";
-import Java from "@/public/assets/images/stack/java.webp";
 import React from "@/public/assets/images/stack/react.svg";
 import Next from "@/public/assets/images/stack/nextdotjs.svg";
 import Node from "@/public/assets/images/stack/nodedotjs.svg";
 import Express from "@/public/assets/images/stack/express.svg";
 import PostgreSQL from "@/public/assets/images/stack/postgresql.svg";
 import MongoDB from "@/public/assets/images/stack/mongodb.svg";
+import Convex from "@/public/assets/images/stack/convex-logo.png";
 import Prisma from "@/public/assets/images/stack/prisma.svg";
 import Motoko from "@/public/assets/images/stack/motoko.webp";
 import EJS from "@/public/assets/images/stack/ejs.svg";
@@ -92,12 +92,6 @@ export const myStack = [
                 title: "Python",
                 icon: Python
             },
-            {
-                id: 6,
-                title: "Java",
-                icon: Java
-            },
-
         ]
     },
     {
@@ -158,6 +152,11 @@ export const myStack = [
                 title: "MongoDB",
                 icon: MongoDB
             },
+            {
+                id: 2,
+                title: "Convex",
+                icon: Convex
+            }
         ]
     },
     {
