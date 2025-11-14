@@ -1,5 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
-import ExpandingFeaturedCard from "@/components/cards/myWork/ExpandingFeaturedCard";
+import ExpandingFeaturedCard from "@/components/cards/projects/ExpandingFeaturedCard";
 
 export default function ProjectsSection() {
     return (

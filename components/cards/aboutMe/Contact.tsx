@@ -10,30 +10,24 @@ import InstagramLogo from "@/public/assets/images/instagram-logo.png";
 const Contact = () => {
     return (
         <Card title="Contact Me">
-            <div className="flex flex-col gap-6" id="contactMe">
-                <Link href="mailto:waleedgeorge1009@gmail.com" target="_blank" className="flex flex-row items-center gap-4 w-fit group">
-                    <Image src={GoogleLogo} alt="Google logo" className="size-8 group-hover:scale-125 transition-all duration-300 ease-in-out" />
-                    <span className="text-xl">E-mail</span>
+            <div className="flex flex-wrap items-center justify-between align-center gap-3" id="contactMe">
+                <Link href="mailto:waleedgeorge1009@gmail.com" target="_blank">
+                    <Image src={GoogleLogo} alt="Google logo" className="size-8 hover:scale-125 transition-all duration-300 ease-in-out" />
                 </Link>
-                <Link href="https://api.whatsapp.com/send?phone=79887907201" target="_blank" className="flex flex-row items-center gap-4 w-fit group">
-                    <FaWhatsapp className="size-9 group-hover:scale-125 transition-all duration-300 ease-in-out text-[#25D366]" />
-                    <span className="text-xl">WhatsApp</span>
+                <Link href="https://api.whatsapp.com/send?phone=79887907201" target="_blank">
+                    <FaWhatsapp className="size-9 hover:scale-125 transition-all duration-300 ease-in-out text-[#25D366]" />
                 </Link>
-                <Link href="https://t.me/WaleedGeorgy" target="_blank" className="flex flex-row items-center gap-4 w-fit group">
-                    <FaTelegram className="size-9 group-hover:scale-125 transition-all duration-300 ease-in-out text-[#24A1DE]" />
-                    <span className="text-xl">Telegram</span>
+                <Link href="https://t.me/WaleedGeorgy" target="_blank">
+                    <FaTelegram className="size-9 hover:scale-125 transition-all duration-300 ease-in-out text-[#24A1DE]" />
                 </Link>
-                <Link href="https://teams.live.com/l/invite/FEA0l_qcRi3nP3b1AM" target="_blank" className="flex flex-row items-center gap-4 w-fit group">
-                    <BsMicrosoftTeams className="size-9 group-hover:scale-125 transition-all duration-300 ease-in-out text-[#7B83EB]" />
-                    <span className="text-xl">MS Teams</span>
+                <Link href="https://teams.live.com/l/invite/FEA0l_qcRi3nP3b1AM" target="_blank">
+                    <BsMicrosoftTeams className="size-9 hover:scale-125 transition-all duration-300 ease-in-out text-[#7B83EB]" />
                 </Link>
-                <Link href="https://www.facebook.com/waleedSGeorgee/" target="_blank" className="flex flex-row items-center gap-4 w-fit group">
-                    <FaFacebook className="size-9 group-hover:scale-125 transition-all duration-300 ease-in-out text-[#1877F2]" />
-                    <span className="text-xl">Facebook</span>
+                <Link href="https://www.facebook.com/waleedSGeorgee/" target="_blank">
+                    <FaFacebook className="size-9 hover:scale-125 transition-all duration-300 ease-in-out text-[#1877F2]" />
                 </Link>
-                <Link href="https://www.instagram.com/waleed_georgy/" target="_blank" className="group flex flex-row items-center gap-4 w-fit">
-                    <Image src={InstagramLogo} alt="Instagram logo" className="size-9 group-hover:scale-125 transition-all duration-300 ease-in-out" />
-                    <span className="text-xl">Instagram</span>
+                <Link href="https://www.instagram.com/waleed_georgy/" target="_blank">
+                    <Image src={InstagramLogo} alt="Instagram logo" className="size-9 hover:scale-125 transition-all duration-300 ease-in-out" />
                 </Link>
             </div>
         </Card>
