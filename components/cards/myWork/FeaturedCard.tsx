@@ -12,9 +12,9 @@ interface FeaturedCardProps {
 
 const FeaturedCard: FC<FeaturedCardProps> = ({title, tag, photo, link}) => {
     return(
-        <div className="bg-secondary-background flex flex-col gap-2 flex-wrap p-2 rounded-lg">
+        <div className="bg-secondary-background flex flex-col gap-2 flex-wrap p-2 rounded-lg border border-border">
             <FeaturedCardHeader title={title} tag={tag} link={link} />
-            <Image src={photo} alt={tag} className="rounded" />
+            <Image src={photo} alt={tag} className="rounded border border-border" />
         </div>
     );
 };

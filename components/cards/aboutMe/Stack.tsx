@@ -31,7 +31,7 @@ import Tooltip from "@/components/Tooltip";
 
 export default function Stack() {
     return (
-        <Card title="My Stack">
+        <Card title="Tech Stack">
             <div className="flex flex-col gap-5 mt-2">
                 {
                     myStack.map((item, i) => (
@@ -102,6 +102,26 @@ export const myStack = [
                 title: "ReactJS",
                 icon: React
             },
+            {
+                id: 1,
+                title: "Tailwind",
+                icon: Tailwind
+            },
+            {
+                id: 2,
+                title: "SASS",
+                icon: SASS
+            },
+            {
+                id: 3,
+                title: "MaterialUI",
+                icon: MUI
+            },
+            {
+                id: 4,
+                title: "Shadcn",
+                icon: Shadcn
+            }
         ]
     },
     {
@@ -140,7 +160,7 @@ export const myStack = [
         ]
     },
     {
-        name: "DBMSs",
+        name: "DBs",
         stack: [
             {
                 id: 0,
@@ -156,41 +176,11 @@ export const myStack = [
                 id: 2,
                 title: "Convex",
                 icon: Convex
-            }
-        ]
-    },
-    {
-        name: "ORMs",
-        stack: [
-            {
-                id: 0,
-                title: "Prisma",
-                icon: Prisma
-            }
-        ]
-    },
-    {
-        name: "Styling",
-        stack: [
-            {
-                id: 0,
-                title: "MaterialUI",
-                icon: MUI
-            },
-            {
-                id: 1,
-                title: "Tailwind",
-                icon: Tailwind
-            },
-            {
-                id: 2,
-                title: "SASS",
-                icon: SASS
             },
             {
                 id: 3,
-                title: "Shadcn",
-                icon: Shadcn
+                title: "Prisma",
+                icon: Prisma
             }
         ]
     },

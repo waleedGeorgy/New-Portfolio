@@ -1,16 +1,18 @@
 "use client";
 import AboutSection from "@/components/sections/AboutSection";
-import LandingArea from "@/components/sections/LandingSection";
-import MyWorkSection from "@/components/sections/MyWorkSection";
+import MyWorkSection from "@/components/sections/ProjectsSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
+import ContactsSection from "@/components/sections/ContactsSection";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <LandingArea />
-      <MyWorkSection />
+    <main>
       <AboutSection />
+      <ExperienceSection />
+      <MyWorkSection />
+      <ContactsSection />
       <Footer />
-    </div>
+    </main>
   );
 }

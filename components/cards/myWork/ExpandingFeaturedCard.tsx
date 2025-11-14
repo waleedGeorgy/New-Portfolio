@@ -3,9 +3,9 @@ import gallery_images from "@/data/gallery_images";
 
 export default function ExpandingFeaturedCard() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {gallery_images.map((item, i) => (
-                <div key={i} className="h-fit shadow-md shadow-black relative">
+                <div key={i} className="relative">
                     <FeaturedCard
                         title={item.title}
                         link={item.link}

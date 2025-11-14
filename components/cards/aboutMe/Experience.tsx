@@ -3,7 +3,7 @@ import Timeline, { TimelineItem } from "@/components/Timeline";
 
 export default function Experience() {
     return (
-        <Card title="Experience">
+        <Card title="Work Experience">
             <Timeline>
                 <TimelineItem date="2024 - now" title="Full-stack developer" subtitle="Freelancer" tag="Recent"></TimelineItem>
                 <TimelineItem date="2020 - 2024" title="ML scientist" subtitle="Dagestan State University"></TimelineItem>
