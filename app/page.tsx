@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main>
       <div className="grid grid-cols-1 lg:grid-cols-[25%_75%] min-h-screen">
-        <section className="pt-6 lg:p-0 lg:sticky lg:top-0 lg:self-start bg-blue-cosmos/35">
+        <section className="pt-6 lg:p-0 lg:sticky lg:top-0 lg:self-start lg:bg-blue-cosmos/35">
           <div className="lg:h-screen lg:flex lg:items-center lg:justify-center">
             <Profile />
           </div>
         </section>
-        <section className="pt-0 lg:pt-2">
+        <section className="pt-12 lg:pt-8 xl:pt-6">
           <Header />
           <AboutSection />
           <ExperienceSection />
