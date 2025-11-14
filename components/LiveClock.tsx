@@ -19,8 +19,8 @@ const LiveClock: FC<LiveClockProps> = ({ timeZone }) => {
     }, [timeZone]);
 
     return (
-        <div className="text-2xl text-secondary-foreground">
-            {time ? <span>{timeZone.split("/")[1]}, {time}</span> : <p>Loading local time...</p>}
+        <div className="text-xl text-gray-300">
+            {time ? <span>Local time, {time}</span> : <p className="animate-pulse">Loading local time...</p>}
         </div>
     );
 };

@@ -3,11 +3,9 @@ import ExpandingFeaturedCard from "@/components/cards/myWork/ExpandingFeaturedCa
 
 export default function ProjectsSection() {
     return (
-        <div className="pt-14 px-3 lg:px-8" id="projects">
-            <SectionTitle number="02" title="Projects" />
-            <div className="mt-16">
-                <ExpandingFeaturedCard />
-            </div>
+        <div className="pt-14 px-4 lg:px-6" id="projects">
+            <SectionTitle number="03" title="Projects" />
+            <ExpandingFeaturedCard />
         </div>
     );
 }

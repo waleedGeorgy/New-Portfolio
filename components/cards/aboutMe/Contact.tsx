@@ -9,7 +9,7 @@ import InstagramLogo from "@/public/assets/images/instagram-logo.png";
 
 const Contact = () => {
     return (
-        <Card title="Contacts">
+        <Card title="Contact Me">
             <div className="flex flex-col gap-6" id="contactMe">
                 <Link href="mailto:waleedgeorge1009@gmail.com" target="_blank" className="flex flex-row items-center gap-4 w-fit group">
                     <Image src={GoogleLogo} alt="Google logo" className="size-8 group-hover:scale-125 transition-all duration-300 ease-in-out" />

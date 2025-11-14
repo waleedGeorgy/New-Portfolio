@@ -16,8 +16,8 @@ export default function Resume() {
             </p>
             {/* Social links */}
             <Link href="https://drive.google.com/file/d/1PwSQguwLiOCP_ZHCSg7bL6hOw4AKSGnn/view?usp=sharing" target="_blank" download className="ml-auto">
-                <Button className="bg-blue-cosmos text-primary-foreground text-lg shadow-md shadow-black animate-wiggle">
-                    <FaFileDownload />Resumé
+                <Button className="bg-blue-cosmos text-primary-foreground shadow-md shadow-black hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-black">
+                    <FaFileDownload />Resume
                 </Button>
             </Link>
         </Card>

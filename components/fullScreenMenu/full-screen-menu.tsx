@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { menuSlide } from "./animation";
 import Curve from "./curve";
-import ProfilePhoto from "../ProfilePhoto";
 import NavLink from "./nav-link";
 import Link from "next/link";
 import GitHub from "@/public/assets/images/stack/github.svg";
 import Image from "next/image";
 import { Dispatch, FC, SetStateAction } from "react";
+import Signature from "@/public/assets/images/signature.png";
 
 interface FullScreenMenuProps {
   setOpen: Dispatch<SetStateAction<boolean>>
@@ -21,14 +21,9 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({ setOpen }) => {
       exit="exit"
       className="h-screen w-full bg-neutral-950 fixed top-0 right-0 text-primary-foreground z-40"
     >
-      {/*Profile picture and name*/}
-      <div className="relative w-full pl-8 z-10">
-        <div className="hidden xs:block absolute top-32 xs:top-8 xs:scale-100 scale-75 [@media(max-height:500px)]:hidden">
-          <ProfilePhoto />
-        </div>
-      </div>
+      <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden sm:inline-block w-64 relative top-12 left-12" />
       {/* Menu list*/}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-6 xs:pr-14 py-4 w-full font-homenaje bg-gradient-to-r from-black to-blue-cosmos">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-6 xs:pr-14 py-4 w-full font-homenaje bg-blue-cosmos/60">
         <div className="grid relative">
           <div className="flex flex-col justify-center items-end" onClick={() => setOpen(prev => !prev)}>
             {navItems.map((item, index) => (
