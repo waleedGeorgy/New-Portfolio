@@ -31,7 +31,7 @@ export const TimelineItem: FC<TimelineItemProps> = ({ date, title, subtitle, lin
         <div className="flex gap-8 md:gap-4 lg:gap-6 justify-start relative">
             {/* Left side date */}
             <div className="break-words whitespace-pre" style={{ width: `${withoutDate ? "0" : ""}` }}>
-                <p className="text-secondary-foreground">{date}</p>
+                <p className="text-gray-400">{date}</p>
             </div>
             {/* Right-side contents */}
             <div className="flex gap-x-2" style={{ transform: `${withoutDate ? "translateX(-23px)" : ""}` }}>
@@ -61,7 +61,9 @@ const TimelineSubtitle: FC<TimelineSubtitleProps> = ({ subtitle, tag, link }) =>
     return (
         <div className="group text-neutral-400 flex items-center font-normal">
             {/* The subtitle (can be a link if specified) */}
-            <p className={cn("text-[14px] leading-6 mt-1 transition-colors duration-200 ease-in-out", link && "group-hover:text-neutral-200 cursor-pointer")}>{subtitle}</p>
+            <p className={cn("text-[14px] leading-6 mt-1 transition-colors duration-200 ease-in-out", link && "group-hover:text-neutral-200 cursor-pointer underline underline-offset-2")}>
+                {subtitle}
+            </p>
             {link && <FiArrowUpRight className="group-hover:text-neutral-200 transition-colors duration-200 ease-in-out" />}
             {
                 // The tag

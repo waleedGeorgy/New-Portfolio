@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import gallery_images from '@/data/gallery_images';
+import projectsList from '@/data/projectsList';
 import ProjectCard from './ProjectCard';
 
 export default function ProjectsGallery() {
@@ -11,7 +11,7 @@ export default function ProjectsGallery() {
 
     return (
         <div className="grid grid-cols-1 gap-4">
-            {gallery_images.map((item, i) => (
+            {projectsList.map((item, i) => (
                 <ProjectCard
                     title={item.title}
                     link={item.link}

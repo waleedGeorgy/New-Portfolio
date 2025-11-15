@@ -10,7 +10,7 @@ import InstagramLogo from "@/public/assets/images/instagram-logo.png";
 const Contact = () => {
     return (
         <Card title="Contact Me">
-            <div className="flex flex-wrap items-center justify-between align-center gap-3" id="contactMe">
+            <div className="flex flex-wrap items-center align-center gap-6" id="contactMe">
                 <Link href="mailto:waleedgeorge1009@gmail.com" target="_blank" className="flex flex-col justify-center items-center gap-2">
                     <Image src={GoogleLogo} alt="Google logo" className="size-8 hover:scale-125 transition-all duration-300 ease-in-out" />
                     <span className="text-sm">E-mail</span>

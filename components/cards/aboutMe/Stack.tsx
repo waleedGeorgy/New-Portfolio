@@ -40,7 +40,7 @@ export default function Stack() {
                         <div key={i} className="grid items-center gap-9" style={{ gridTemplateColumns: "50px 1fr" }}>
                             {/* Stack type */}
                             <div className="flex flex-wrap break-words whitespace-pre">
-                                <p className="text-secondary-foreground">{item.name}</p>
+                                <p className="text-gray-400">{item.name}</p>
                             </div>
                             {/* Individual stack item */}
                             <div className="flex flex-wrap gap-3">

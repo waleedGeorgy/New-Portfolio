@@ -1,14 +1,15 @@
-import { cn } from "@/lib/utils";
 import { Dispatch, SetStateAction } from "react";
+import { cn } from "@/lib/utils";
 
 export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen: Dispatch<SetStateAction<boolean>>; }) {
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="animate-grow_in shadow-md shadow-black fixed right-4 top-5 m-5 z-[100] w-16 h-16 rounded-full bg-blue-cosmos cursor-pointer hover:bg-[#4c5c7c] transition-colors duration-200 ease-in-out [@media(max-height:420px)]:scale-90 [@media(max-height:500px)]:left-4"
+      className="animate-grow_in shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-[100] py-2.5 px-5 rounded-full bg-blue-cosmos hover:bg-[#4c5c7c] cursor-pointer transition-all duration-300 ease-in-out flex flex-row items-center gap-3"
     >
+      <h2 className="text-white ">Menu</h2>
       <div className="relative flex items-center justify-center">
-        <div className="flex flex-col gap-y-2 w-[30px]  transform transition-all duration-300 origin-center overflow-hidden">
+        <div className="flex flex-col gap-y-2 transform transition-all duration-300 origin-center overflow-hidden">
           <div
             className={cn(
               "bg-white h-[2px] w-7 transform transition-all duration-300 origin-left",

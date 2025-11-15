@@ -8,8 +8,9 @@ interface TooltipProps {
     icon: string | StaticImport
 }
 
-const Tooltip: FC<TooltipProps> = ({title, icon}) => {
+const Tooltip: FC<TooltipProps> = ({ title, icon }) => {
     const [hovered, setHovered] = useState(false);
+
     return (
         <div className={cn("link relative bg-[#2D2C33] w-11 h-11 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900",
             "border border-border rounded-xl",
@@ -22,9 +23,9 @@ const Tooltip: FC<TooltipProps> = ({title, icon}) => {
                 <Image src={icon} alt={title} className="w-full h-full overflow-clip object-contain" />
             </div>
             {/* Show popup with the name of the technology on hover */}
-            { hovered && <div className="absolute -top-6 bg-black/[0.2] py-0.8 px-2 rounded-lg transition-all duration-200">
-                            <p className="font-homenaje tracking-wider text-[16px] whitespace-nowrap">{title}</p>
-                        </div>}
+            {hovered && <div className="absolute -top-6 bg-black/[0.2] py-0.8 px-2 rounded-lg transition-all duration-200">
+                <p className="font-homenaje tracking-wider text-[16px] whitespace-nowrap">{title}</p>
+            </div>}
         </div>
     )
 };

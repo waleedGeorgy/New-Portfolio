@@ -4,7 +4,7 @@ import GroovityImage from "@/public/assets/images/projects_gallery/groovity.png"
 import SemicolonImage from "@/public/assets/images/projects_gallery/semicolon.png";
 import ChatterboxImage from "@/public/assets/images/projects_gallery/chatterbox.png";
 
-const gallery_images = [
+const projectsList = [
   {
     image: SemicolonImage,
     title: "Semicolon",
@@ -27,6 +27,7 @@ const gallery_images = [
       "TypeScript",
       "Tailwind",
       "Shadcn",
+      "Socket.io",
     ],
     description:
       "A web app for playing music and chatting with friends in real-time, made with MERN. Contains an admin panel for organizing, deleting, and adding songs and albums. Shows friends' activity in real-time.",
@@ -76,10 +77,11 @@ const gallery_images = [
       "JavaScript",
       "Tailwind",
       "DaisyUI",
+      "Socket.io",
     ],
     description:
       "A MERN, real-time messaging app, that allows image and text sharing. Supports profile customization, online status indication, and more. Provides a wide variety of themes to choose from.",
   },
 ];
 
-export default gallery_images;
+export default projectsList;

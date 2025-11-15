@@ -16,7 +16,7 @@ const ProjectCardHeader: FC<ProjectCardHeaderProps> = ({
 }) => {
     return (
         <div className="flex items-center justify-between px-5 py-4 text-primary-foreground">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-1">
                 <div className="group flex flex-row items-end gap-2 w-fit">
                     <Link href={link} target="_blank" className="font-semibold text-xl underline underline-offset-2 transition-all duration-300">{title}</Link>
                     <Link href={link} target="_blank" className="translate-x-0 opacity-0 group-hover:translate-x-3 group-hover:opacity-100 transition-all duration-500">
@@ -25,7 +25,7 @@ const ProjectCardHeader: FC<ProjectCardHeaderProps> = ({
                 </div>
                 <span className="text-gray-400 text-sm">{tag}</span>
             </div>
-            <div className="flex items-center gap-2  w-fit">
+            <div className="flex items-center gap-2 w-fit">
                 <span className="text-sm text-text-secondary sm:inline-block hidden">
                     {isExpanded ? 'Click to collapse' : 'Click to expand'}
                 </span>

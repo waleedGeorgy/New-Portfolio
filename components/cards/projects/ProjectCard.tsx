@@ -27,12 +27,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
 
     return (
         <div
-            className={`
-                 rounded-xl  
-                transition-all duration-500 ease-in-out overflow-hidden
-                cursor-pointer transform-gpu outline outline-border
-                ${isExpanded ? 'shadow-xl z-10 bg-gray-800' : 'hover:shadow-lg bg-secondary-background'}
-            `}
+            className={`rounded-xl transition-all duration-500 ease-in-out overflow-hidden cursor-pointer transform-gpu outline outline-border ${isExpanded ? 'shadow-xl z-10 bg-gray-800' : 'hover:shadow-lg bg-secondary-background'}`}
             onClick={onClick}
         >
             <ProjectCardHeader title={title} tag={tag} link={link} isExpanded={isExpanded} />
