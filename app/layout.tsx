@@ -5,12 +5,12 @@ import { cn } from "@/lib/utils";
 import Background from "@/components/Noise-Background";
 import Cursor from "@/components/animations/AnimatedCursor";
 
-const MainFont = PT_Sans({weight:"400", subsets:["latin"]});
-const HomenajeFont = Homenaje({weight:"400", subsets:["latin"], variable: "--font-homenaje"});
+const MainFont = PT_Sans({ weight: "400", subsets: ["latin"] });
+const HomenajeFont = Homenaje({ weight: "400", subsets: ["latin"], variable: "--font-homenaje" });
 
 export const metadata: Metadata = {
   title: "Waleed Georgy",
-  description: "Waleed Georgy portfolio website",
+  description: "Welcome to my corner!",
   creator: "Waleed Georgy",
 };
 

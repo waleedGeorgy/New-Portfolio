@@ -1,6 +1,6 @@
-import Card from "@/components/Card"
 import React from "react"
 import { BsStarFill } from "react-icons/bs"
+import Card from "@/components/Card"
 
 const OtherSkills = () => {
     return (

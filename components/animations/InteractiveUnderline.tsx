@@ -31,7 +31,7 @@ export default function SvgCurve() {
   };
 
   const resetAnimation = () => {
-    cancelAnimationFrame(reqId);
+    cancelAnimationFrame(reqId as number);
 
     animateOut();
   };
