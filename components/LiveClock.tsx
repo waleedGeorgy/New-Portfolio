@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { CgSpinner, CgSpinnerAlt, CgSpinnerTwo, CgSpinnerTwoAlt } from "react-icons/cg";
 
 const LiveClock = ({ timeZone }: { timeZone: string }) => {
     const [time, setTime] = useState("");
@@ -15,9 +16,13 @@ const LiveClock = ({ timeZone }: { timeZone: string }) => {
     }, [timeZone]);
 
     return (
-        <div className="text-xl text-gray-300">
-            {time ? <span>Local time, {time}</span> : <p className="animate-pulse">Loading local time...</p>}
-        </div>
+        <>
+            {time ?
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-300 font-homenaje">Local time, {time}</p>
+                :
+                <p className="animate-pulse text-gray-400 text-lg md:text-xl lg:text-2xl flex flex-row items-center gap-1.5 font-homenaje">Loading local time<CgSpinnerTwoAlt className="animate-spin" /></p>
+            }
+        </>
     );
 };
 

@@ -19,13 +19,13 @@ const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>
     >
       <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block w-64 relative top-12 left-12" />
       {/* Menu list*/}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-8 py-4 w-full font-homenaje bg-blue-cosmos/60">
+      <nav className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-8 py-4 w-full font-homenaje bg-blue-cosmos/60">
         <div className="flex flex-col justify-center items-end" onClick={() => setOpen(prev => !prev)}>
           {navItems.map((item, index) => (
             <NavLink key={index} data={{ ...item, index }} />
           ))}
         </div>
-      </div>
+      </nav>
       {/* Menu footer */}
       <div className="w-full absolute bottom-8 px-6">
         <div className="flex flex-wrap items-center justify-start gap-x-8 gap-y-4">
