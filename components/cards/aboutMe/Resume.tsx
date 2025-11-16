@@ -13,7 +13,7 @@ export default function Resume() {
                 A researcher and instructor with patents and publications, combined with strong multilingual abilities. Able to quickly adapt to new technologies and environments, and work within set deadlines. Deeply passionate about continual learning and self-improvement.
             </p>
             {/* Social links */}
-            <Link href="https://drive.google.com/file/d/1PwSQguwLiOCP_ZHCSg7bL6hOw4AKSGnn/view?usp=sharing" target="_blank" download className="ml-auto">
+            <Link href="https://drive.google.com/file/d/1LpYv73t9cNIUNArugkt-n0Azwb-XrXmy/view?usp=sharing" target="_blank" download className="ml-auto">
                 <Button className="bg-blue-cosmos text-primary-foreground shadow-md shadow-black/50 hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-black/50">
                     <FaFileDownload />Resume
                 </Button>
