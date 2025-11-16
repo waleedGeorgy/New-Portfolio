@@ -4,14 +4,14 @@ export default function SvgCurve() {
   const path = useRef<SVGPathElement | null>(null);
 
   let progress = 0;
-  let reqId: number | null = null; // Specify the type for reqId
+  let reqId: number | null = null;
   let x = 0.5;
   let time = Math.PI / 2;
   const animateIn = () => {
-    // If the animationOut is running, cancel it and reset time
     if (reqId !== null) {
       cancelAnimationFrame(reqId);
       time = Math.PI / 2;
+      reqId = null;
     }
 
     setPath(progress);
@@ -20,11 +20,9 @@ export default function SvgCurve() {
   };
 
   const manageMouseMove = (e: React.MouseEvent) => {
-    // Specify the type for the event
     const { movementY } = e;
 
-    const box = (e.target as HTMLElement).getBoundingClientRect(); // Specify the type for e.target
-
+    const box = (e.target as HTMLElement).getBoundingClientRect();
     x = (e.clientX - box.left) / box.width;
 
     progress += movementY;
@@ -51,7 +49,6 @@ export default function SvgCurve() {
       reqId = requestAnimationFrame(animateOut);
     }
 
-    // If the slope is almost flat, we stop the animation
     else {
       time = Math.PI / 2;
 
@@ -68,7 +65,6 @@ export default function SvgCurve() {
 
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -101,7 +97,6 @@ export default function SvgCurve() {
         className="box"
       ></span>
       <svg>
-        {/* Use optional chaining to handle the null case */}
         <path ref={path}></path>
       </svg>
     </div>

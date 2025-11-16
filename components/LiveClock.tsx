@@ -1,11 +1,7 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-interface LiveClockProps {
-    timeZone: string
-}
-
-const LiveClock: FC<LiveClockProps> = ({ timeZone }) => {
+const LiveClock = ({ timeZone }: { timeZone: string }) => {
     const [time, setTime] = useState("");
 
     {/* Initializing and running the clock */ }

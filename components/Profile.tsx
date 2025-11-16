@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Signature from "@/public/assets/images/signature.png";
-import MyImage from "@/public/assets/images/profile-pic.webp";
-import LiveClock from "./LiveClock";
-import MagneticEffect from "./animations/MagneticEffect";
-import SpecialButton from "./SpecialButton";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import LiveClock from "./LiveClock";
+import SpecialButton from "./SpecialButton";
+import MagneticEffect from "./animations/MagneticEffect";
+import MyImage from "@/public/images/profile-pic.webp";
+import Signature from "@/public/images/signature.png";
 
 export default function Profile() {
     return (

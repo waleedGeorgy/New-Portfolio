@@ -1,6 +1,6 @@
+import SectionTitle from "../SectionTitle";
 import Resume from "../cards/aboutMe/Resume";
 import Background from "../cards/aboutMe/Background";
-import SectionTitle from "../SectionTitle";
 
 export default function AboutSection() {
     return (

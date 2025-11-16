@@ -1,8 +1,8 @@
-import AuthorityImage from "@/public/assets/images/projects_gallery/authority.png";
-import GlanceImage from "@/public/assets/images/projects_gallery/glance.png";
-import GroovityImage from "@/public/assets/images/projects_gallery/groovity.png";
-import SemicolonImage from "@/public/assets/images/projects_gallery/semicolon.png";
-import ChatterboxImage from "@/public/assets/images/projects_gallery/chatterbox.png";
+import AuthorityImage from "@/public/images/projects_gallery/authority.png";
+import GlanceImage from "@/public/images/projects_gallery/glance.png";
+import GroovityImage from "@/public/images/projects_gallery/groovity.png";
+import SemicolonImage from "@/public/images/projects_gallery/semicolon.png";
+import ChatterboxImage from "@/public/images/projects_gallery/chatterbox.png";
 
 const projectsList = [
   {

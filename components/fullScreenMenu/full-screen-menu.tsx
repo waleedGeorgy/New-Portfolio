@@ -1,18 +1,14 @@
+import { Dispatch, SetStateAction } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { menuSlide } from "./animation";
 import Curve from "./curve";
 import NavLink from "./nav-link";
-import Link from "next/link";
-import GitHub from "@/public/assets/images/stack/github.svg";
-import Image from "next/image";
-import { Dispatch, FC, SetStateAction } from "react";
-import Signature from "@/public/assets/images/signature.png";
+import GitHub from "@/public/images/stack/github.svg";
+import Signature from "@/public/images/signature.png";
 
-interface FullScreenMenuProps {
-  setOpen: Dispatch<SetStateAction<boolean>>
-}
-
-const FullScreenMenu: FC<FullScreenMenuProps> = ({ setOpen }) => {
+const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>>; }) => {
   return (
     <motion.div
       variants={menuSlide}
@@ -30,7 +26,7 @@ const FullScreenMenu: FC<FullScreenMenuProps> = ({ setOpen }) => {
           ))}
         </div>
       </div>
-      {/* Footer */}
+      {/* Menu footer */}
       <div className="w-full absolute bottom-8 px-6">
         <div className="flex flex-wrap items-center justify-start gap-x-8 gap-y-4">
           <div className="flex items-center gap-3 text-secondary-foreground hover:text-white transition-colors duration-200 ease-in-out text-sm">

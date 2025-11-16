@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import { FC, ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 interface CardProps {
     title: string,
@@ -7,7 +7,7 @@ interface CardProps {
     className?: string
 };
 
-const Card:FC<CardProps> = ({title, children, className}) => {
+const Card: FC<CardProps> = ({ title, children, className }) => {
     return (
         <div className={cn("relative bg-primary-background w-full h-fit rounded-xl border border-border p-6 text-primary-foreground overflow-hidden",
             className)}>

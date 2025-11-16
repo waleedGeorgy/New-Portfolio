@@ -4,8 +4,8 @@ import ProjectsSection from "@/components/sections/ProjectsSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ContactsSection from "@/components/sections/ContactsSection";
 import Footer from "@/components/sections/Footer";
-import Profile from "@/components/Profile";
 import Header from "@/components/sections/Header";
+import Profile from "@/components/Profile";
 
 export default function Home() {
   return (

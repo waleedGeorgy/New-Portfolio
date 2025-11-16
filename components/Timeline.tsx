@@ -4,11 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { cn } from "@/lib/utils";
 
 // Main Timeline component
-interface TimelineProps {
-    children: ReactNode
-};
-
-const Timeline: FC<TimelineProps> = ({ children }) => {
+const Timeline = ({ children }: { children: ReactNode }) => {
     return (
         <div className="flex flex-col gap-y-5">{children}</div>
     );

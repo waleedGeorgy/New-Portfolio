@@ -32,15 +32,9 @@ importers:
       react-icons:
         specifier: ^5.4.0
         version: 5.4.0(react@19.0.0)
-      react-parallax-tilt:
-        specifier: ^1.7.313
-        version: 1.7.313(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-water-wave:
         specifier: ^2.0.1
         version: 2.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      swiper:
-        specifier: ^11.2.4
-        version: 11.2.4
       tailwind-merge:
         specifier: ^3.0.1
         version: 3.0.1
@@ -1457,12 +1451,6 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-parallax-tilt@1.7.313:
-    resolution: {integrity: sha512-SjIic2FehsB4v/zDEmcf7MInCd6vy/tjj5Vn+Cwl9ksEgNxsDIuLZEhEy7w7rR+svj8NPGUpvTpy93D8e3q9hA==}
-    peerDependencies:
-      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
   react-water-wave@2.0.1:
     resolution: {integrity: sha512-+iu4pUzDebh2cIQbupzckCSAMok+dYx6hTOziVdLt2gIbB4erceMmlnzF2TmUg7FZDvFW7NJYWXEbfi7gzOsfA==}
     peerDependencies:
@@ -1665,10 +1653,6 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-
-  swiper@11.2.4:
-    resolution: {integrity: sha512-DTtglrsFfMYytid+oNy4QI3t2N2+XhhwSYbnyOhlwBmvY8Bkoj3ombK1/b80w8vDpQ+Lqlnbm+0737+i32MrcA==}
-    engines: {node: '>= 4.7.0'}
 
   tailwind-merge@3.0.1:
     resolution: {integrity: sha512-AvzE8FmSoXC7nC+oU5GlQJbip2UO7tmOhOfQyOmPhrStOGXHU08j8mZEHZ4BmCqY5dWTCo4ClWkNyRNx1wpT0g==}
@@ -3309,11 +3293,6 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-parallax-tilt@1.7.313(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
-    dependencies:
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-
   react-water-wave@2.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       jquery: 3.7.1
@@ -3588,8 +3567,6 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
-
-  swiper@11.2.4: {}
 
   tailwind-merge@3.0.1: {}
 

@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaArrowUp } from "react-icons/fa";
 import { CgExternal } from "react-icons/cg";
-import GitHub from "@/public/assets/images/stack/github.svg";
-import Signature from "@/public/assets/images/signature.png";
+import GitHub from "@/public/images/stack/github.svg";
+import Signature from "@/public/images/signature.png";
 
 export default function Footer() {
     return (

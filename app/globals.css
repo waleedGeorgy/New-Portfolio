@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 /* Special button */
-.special-btn{
+.special-btn {
   background-image: linear-gradient(
     135deg,
     #7c3aed,
@@ -26,11 +26,11 @@ body {
 }
 
 /* The fadeout effect of the section number */
-.bottom-fade{
+.bottom-fade {
   background-image: linear-gradient(
     0deg,
     #00000000 20%,
-    rgba(255,255,255) 100%
+    rgba(255, 255, 255) 100%
   );
 }
 
@@ -61,51 +61,4 @@ body {
   position: relative;
   top: -20px;
   z-index: 1;
-}
-
-/* Swiper */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  background: whitesmoke;
-}
-
-.swiper-pagination {
-  background-color: rgba(0,0,0,0.3) !important;
-  border-radius: 50px !important;
-  width: fit-content !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  backdrop-filter: blur(4px) !important;
-  padding: 0 3px !important;
-  height: 20px !important;
-  display: flex;
-  align-items: center;
-}
-
-.swiper-pagination-bullet {
-  width: 6px !important;
-  height: 6px !important;
-}
-
-.swiper-pagination-bullet-active {
-  background: whitesmoke !important;
-}
-
-/* Remove white background on autofill inputs and text areas */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-text-fill-color: white;
-  transition: background-color 5000s ease-in-out 0s;
-  color: white;
 }

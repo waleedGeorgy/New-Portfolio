@@ -4,8 +4,8 @@ import { FaWhatsapp, FaTelegram } from "react-icons/fa";
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import Card from "@/components/Card"
-import GoogleLogo from "@/public/assets/images/google-icon.png";
-import InstagramLogo from "@/public/assets/images/instagram-logo.png";
+import GoogleLogo from "@/public/images/google-icon.png";
+import InstagramLogo from "@/public/images/instagram-logo.png";
 
 const Contact = () => {
     return (

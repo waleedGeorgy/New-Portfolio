@@ -37,9 +37,10 @@ interface ButtonBodyProps {
 const ButtonBody: FC<ButtonBodyProps> = ({ children, hasIcon, className }) => {
     return (
         <div className="cursor-pointer flex-none w-auto h-full">
-            <div className={cn("flex items-center justify-center gap-2 rounded-full select-none whitespace-nowrap transition-colors duration-300",
-                className,
-                hasIcon ? "h-10 w-10" : "h-full w-max px-3 py-2")}>
+            <div
+                className={cn("flex items-center justify-center gap-2 rounded-full select-none whitespace-nowrap transition-colors duration-300",
+                    className,
+                    hasIcon ? "h-10 w-10" : "h-full w-max px-3 py-2")}>
                 {children}
             </div>
         </div>

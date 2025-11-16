@@ -1,8 +1,8 @@
+import SectionTitle from "../SectionTitle";
 import Experience from "../cards/aboutMe/Experience";
 import Education from "../cards/aboutMe/Education";
 import Certifications from "../cards/aboutMe/Certifications";
 import Stack from "../cards/aboutMe/Stack";
-import SectionTitle from "../SectionTitle";
 import OtherSkills from "../cards/aboutMe/OtherSkills";
 
 export default function ExperienceSection() {

@@ -1,6 +1,6 @@
+import SectionTitle from "../SectionTitle";
 import Contact from "../cards/aboutMe/Contact";
 import Links from "../cards/aboutMe/Links";
-import SectionTitle from "../SectionTitle";
 
 export default function ContactsSection() {
     return (
