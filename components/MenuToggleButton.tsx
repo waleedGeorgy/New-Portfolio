@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import FullScreenMenu from "../fullScreenMenu/full-screen-menu";
-import ToggleButton from "../fullScreenMenu/toggle-button";
+import FullScreenMenu from "./fullScreenMenu/full-screen-menu";
+import ToggleButton from "./fullScreenMenu/toggle-button";
 
-export default function Header() {
+export default function MenuToggleButton() {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const [showMenuToggle, setMenuToggle] = useState<boolean>(false);
 

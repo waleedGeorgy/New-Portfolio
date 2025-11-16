@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { FaArrowAltCircleRight } from "react-icons/fa";
-import LiveClock from "./LiveClock";
-import SpecialButton from "./SpecialButton";
-import MagneticEffect from "./animations/MagneticEffect";
+import LiveClock from "../LiveClock";
+import SpecialButton from "../SpecialButton";
+import MagneticEffect from "../animations/MagneticEffect";
 import MyImage from "@/public/images/profile-pic.webp";
 import Signature from "@/public/images/signature.png";
 
-export default function Profile() {
+export default function ProfileSection() {
     return (
         <div className="flex flex-col items-center gap-y-5 text-primary-foreground px-3">
             <div className="flex flex-col justify-center items-center gap-2.5">

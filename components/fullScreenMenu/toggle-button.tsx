@@ -5,9 +5,9 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="animate-grow_in shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-[100] py-2.5 px-5 rounded-full bg-blue-cosmos hover:bg-[#4c5c7c] cursor-pointer transition-all duration-300 ease-in-out flex flex-row items-center gap-3"
+      className="animate-grow_in shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-[100] py-1.5 px-5 rounded-full bg-blue-cosmos hover:bg-[#4c5c7c] cursor-pointer transition-all duration-300 ease-in-out flex flex-row items-center gap-3"
     >
-      <h2 className="text-white ">Menu</h2>
+      <h2 className="text-white text-lg">Menu</h2>
       <div className="relative flex items-center justify-center">
         <div className="flex flex-col gap-y-2 transform transition-all duration-300 origin-center overflow-hidden">
           <div
