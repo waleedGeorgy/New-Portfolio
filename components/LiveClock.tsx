@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { CgSpinner, CgSpinnerAlt, CgSpinnerTwo, CgSpinnerTwoAlt } from "react-icons/cg";
+import { CgSpinnerTwoAlt } from "react-icons/cg";
 
 const LiveClock = ({ timeZone }: { timeZone: string }) => {
     const [time, setTime] = useState("");
