@@ -53,7 +53,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                     <div className="space-y-4 text-primary-foreground pb-4">
                         {/* Project tech stack */}
                         <div>
-                            <h4 className="font-semibold text-gray-400 text-lg">Tech stack:</h4>
+                            <p className="font-semibold text-gray-400 text-lg">Tech stack:</p>
                             <div className="flex flex-wrap gap-2 mt-1">
                                 {techStack.map(tech => (
                                     <span key={tech} className="bg-purple-darkness text-primary px-2.5 py-0.5 rounded-full text-sm font-light">
@@ -64,7 +64,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                         </div>
                         {/* Project description */}
                         <div>
-                            <h4 className="font-semibold text-gray-400 text-lg">Description:</h4>
+                            <p className="font-semibold text-gray-400 text-lg">Description:</p>
                             <p className="text-text-secondary">{description}</p>
                         </div>
                     </div>
