@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 
 export default function Curve() {
-  const initialPath = `M100 0 L100 ${window.innerHeight} Q-100 ${window.innerHeight / 2
-    } 100 0`;
-  const targetPath = `M100 0 L100 ${window.innerHeight} Q100 ${window.innerHeight / 2
-    } 100 0`;
+  const initialPath = `M100 0 L100 ${window.innerHeight} Q-100 ${window.innerHeight / 2 } 100 0`;
+  const targetPath = `M100 0 L100 ${window.innerHeight} Q100 ${window.innerHeight / 2 } 100 0`;
 
   const curve = {
     initial: {
@@ -21,7 +19,7 @@ export default function Curve() {
   };
 
   return (
-    <svg className="absolute top-0 -left-[99px] w-[100px] h-full stroke-none fill-background">
+    <svg className="absolute top-0 -left-24 w-24 h-full stroke-none fill-background">
       <motion.path
         variants={curve}
         initial="initial"
