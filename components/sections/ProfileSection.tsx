@@ -8,7 +8,7 @@ import Signature from "@/public/images/signature.png";
 
 export default function ProfileSection() {
     return (
-        <aside className="flex flex-col items-center gap-y-5 text-primary-foreground px-3">
+        <aside className="flex flex-col items-center gap-y-5 text-primary-foreground px-3" role="banner">
             {/* Profile image and name */}
             <div className="flex flex-col justify-center items-center gap-2">
                 <div className="relative md:size-[148px] lg:size-[164px] xs:size-[164px] size-[132px] rounded-full flex items-center justify-center bg-gradient-to-br from-purple-darkness to-yellow-ripe">
