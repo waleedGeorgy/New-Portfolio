@@ -8,7 +8,7 @@ const projectsList = [
   {
     image: SemicolonImage,
     title: "Semicolon",
-    link: "https://semicolon-rp93.vercel.app/",
+    link: "https://semicolon-two.vercel.app/",
     tag: "A code playground with a slice of social media goodness",
     techStack: ["TypeScript", "Tailwind", "Next.js", "Convex"],
     description:
