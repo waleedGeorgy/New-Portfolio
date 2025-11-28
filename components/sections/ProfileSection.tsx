@@ -17,11 +17,9 @@ export default function ProfileSection() {
                 <Image src={Signature} alt="Waleed's signature" className="w-44 xs:w-60" />
             </div>
             {/* Contact Me button */}
-            <div>
-                <MagneticEffect>
-                    <SpecialButton text="Contact Me" icon={<FaArrowAltCircleRight className="size-5" />} link="/#contactMe" />
-                </MagneticEffect>
-            </div>
+            <MagneticEffect>
+                <SpecialButton text="Contact Me" icon={<FaArrowAltCircleRight className="size-5" />} link="/#contactMe" />
+            </MagneticEffect>
             {/* Live Clock */}
             <div className="relative hidden md:inline-block">
                 <LiveClock timeZone="Europe/Moscow" />

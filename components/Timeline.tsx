@@ -61,9 +61,8 @@ const TimelineSubtitle: FC<TimelineSubtitleProps> = ({ subtitle, tag, link }) =>
                 {subtitle}
             </p>
             {link && <FiArrowUpRight className="group-hover:text-neutral-200 transition-colors duration-200 ease-in-out" />}
-            {
-                // The tag
-                tag && <div className="ms-2 mt-1 rounded-[20px] bg-gradient-to-bl from-purple-darkness to-green-benzol py-0.7 px-1.5">
+            {tag &&
+                <div className="ms-2 mt-1 rounded-[20px] bg-gradient-to-bl from-purple-darkness to-green-benzol py-0.7 px-1.5">
                     <p className="text-[14px] font-light text-white">{tag}</p>
                 </div>
             }

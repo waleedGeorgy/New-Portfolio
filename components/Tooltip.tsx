@@ -19,13 +19,15 @@ const Tooltip: FC<TooltipProps> = ({ title, icon }) => {
             onMouseLeave={() => setHovered(false)}
         >
             {/* Stack icon */}
-            <div className="w-[28px] h-[28px]">
+            <div className="size-7">
                 <Image src={icon} alt={title} className="w-full h-full overflow-clip object-contain" />
             </div>
             {/* Show popup with the name of the technology on hover */}
-            {hovered && <div className="absolute -top-6 bg-black/[0.2] py-0.8 px-2 rounded-lg transition-all duration-200">
-                <p className="font-homenaje tracking-wider text-[16px] whitespace-nowrap">{title}</p>
-            </div>}
+            {hovered &&
+                <div className="absolute -top-6 bg-black/[0.2] py-0.8 px-2 rounded-lg transition-all duration-200">
+                    <p className="font-homenaje tracking-wide whitespace-nowrap">{title}</p>
+                </div>
+            }
         </div>
     )
 };

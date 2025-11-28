@@ -22,11 +22,11 @@ export default function MenuToggleButton() {
     }, []);
 
     return (
-        <div>
+        <>
             {showMenuToggle && <ToggleButton open={menuOpen} setOpen={setMenuOpen} />}
             <AnimatePresence mode="wait">
                 {menuOpen && <FullScreenMenu setOpen={setMenuOpen} />}
             </AnimatePresence>
-        </div>
+        </>
     );
 }

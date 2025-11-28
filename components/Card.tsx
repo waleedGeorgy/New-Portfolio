@@ -14,9 +14,7 @@ const Card: FC<CardProps> = ({ title, children, className }) => {
             <div className="flex flex-col gap-y-6">
                 {/* Card title */}
                 {title && (
-                    <div className="font-homenaje tracking-wide">
-                        <p className="capitalize font-bold tracking-wider text-2xl">{title}</p>
-                    </div>
+                    <p className="font-homenaje tracking-wide capitalize font-bold text-2xl">{title}</p>
                 )}
                 {/* Card body */}
                 {children}
