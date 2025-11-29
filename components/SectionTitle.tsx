@@ -18,7 +18,7 @@ const SectionTitle: FC<SectionTitleProps> = ({ number, title, icon }) => {
             </div>
             {/* Section title and icon */}
             <div className="flex items-center flex-nowrap min-h-min overflow-hidden p-0 w-full font-homenaje">
-                <p className="text-[17vw] lg:text-[10vw] leading-[100%] text-primary-foreground">{title}</p>
+                <h1 className="text-[17vw] lg:text-[10vw] leading-[100%] text-primary-foreground">{title}</h1>
                 <p className="text-[16vw] lg:text-[11vw] leading-[100%] text-primary-foreground">{icon}</p>
             </div>
             {/* Section interactive underline */}

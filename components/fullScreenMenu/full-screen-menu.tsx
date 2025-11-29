@@ -17,7 +17,7 @@ const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>
       exit="exit"
       className="h-screen w-full bg-neutral-950 fixed top-0 right-0 text-primary-foreground z-40"
     >
-      <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block w-64 relative top-12 left-12" />
+      <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block xs:w-48 sm:inline-block sm:w-64 relative top-12 left-12" />
       {/* Menu list*/}
       <nav className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-8 py-4 w-full font-homenaje bg-blue-cosmos/60" role="navigation">
         <div className="flex flex-col justify-center items-end" onClick={() => setOpen(prev => !prev)}>

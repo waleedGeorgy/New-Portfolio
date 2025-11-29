@@ -6,51 +6,27 @@ const OtherSkills = () => {
     return (
         <Card title="Other skills">
             <div className="flex flex-col gap-3.5">
-                <div className="flex flex-row items-center gap-3">
-                    <h3 className=" text-gray-400 w-36">Data structures</h3>
-                    {[...Array<React.ReactNode>(4)].map((_, id) => (
-                        <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
-                    )
-                    )}
-                </div>
-                <div className="flex flex-row items-center gap-3">
-                    <h3 className="text-gray-400 w-36">Algorithms</h3>
-                    {[...Array<React.ReactNode>(4)].map((_, id) => (
-                        <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
-                    )
-                    )}
-                </div>
-                <div className="flex flex-row items-center gap-3">
-                    <h3 className="text-gray-400 w-36">English language</h3>
-                    {[...Array<React.ReactNode>(5)].map((_, id) => (
-                        <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
-                    )
-                    )}
-                </div>
-                <div className="flex flex-row items-center gap-3">
-                    <h3 className="text-gray-400 w-36">Russian language</h3>
-                    {[...Array<React.ReactNode>(5)].map((_, id) => (
-                        <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
-                    )
-                    )}
-                </div>
-                <div className="flex flex-row items-center gap-3">
-                    <h3 className="text-gray-400 w-36">Arabic language</h3>
-                    {[...Array<React.ReactNode>(5)].map((_, id) => (
-                        <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
-                    )
-                    )}
-                </div>
-                <div className="flex flex-row items-center gap-3">
-                    <h3 className="text-gray-400 w-36">Communication</h3>
-                    {[...Array<React.ReactNode>(4)].map((_, id) => (
-                        <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
-                    )
-                    )}
-                </div>
+                <SkillItem skill="Data structures" level={4} />
+                <SkillItem skill="Algorithms" level={4} />
+                <SkillItem skill="English language" level={5} />
+                <SkillItem skill="Russian language" level={5} />
+                <SkillItem skill="Arabic language" level={5} />
+                <SkillItem skill="Communication" level={4} />
             </div>
         </Card>
     )
 }
 
 export default OtherSkills
+
+const SkillItem = ({ skill, level }: { skill: string; level: number }) => {
+    return (
+        <div className="flex flex-row items-center gap-3">
+            <h3 className="text-gray-400 w-36">{skill}</h3>
+            {[...Array<React.ReactNode>(level)].map((_, id) => (
+                <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
+            )
+            )}
+        </div>
+    )
+}
