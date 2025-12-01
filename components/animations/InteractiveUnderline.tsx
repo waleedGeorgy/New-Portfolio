@@ -51,7 +51,6 @@ export default function SvgCurve() {
 
     else {
       time = Math.PI / 2;
-
       progress = 0;
     }
   };
@@ -95,7 +94,7 @@ export default function SvgCurve() {
           manageMouseMove(e);
         }}
         className="box"
-      ></span>
+      />
       <svg>
         <path ref={path}></path>
       </svg>

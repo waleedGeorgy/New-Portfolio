@@ -17,12 +17,10 @@ const ProjectCard: FC<ProjectCardProps> = ({
     title, tag, photo, link, techStack, description, isExpanded, onClick
 }) => {
     const contentRef = useRef<HTMLDivElement>(null);
-    const [contentHeight, setContentHeight] = useState(0);
+    const [contentHeight, setContentHeight] = useState<number>(0);
 
     useEffect(() => {
-        if (contentRef.current) {
-            setContentHeight(contentRef.current.scrollHeight);
-        }
+        if (contentRef.current) setContentHeight(contentRef.current.scrollHeight);
     }, [isExpanded]);
 
     return (
@@ -53,7 +51,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                     <div className="space-y-4 text-primary-foreground pb-4">
                         {/* Project tech stack */}
                         <div>
-                            <p className="font-semibold text-gray-400 text-lg">Tech stack:</p>
+                            <p className="text-gray-400 text-lg">Tech stack:</p>
                             <div className="flex flex-wrap gap-2 mt-1">
                                 {techStack.map(tech => (
                                     <span key={tech} className="bg-purple-darkness text-primary px-2.5 py-0.5 rounded-full text-sm font-light">
@@ -64,7 +62,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                         </div>
                         {/* Project description */}
                         <div>
-                            <p className="font-semibold text-gray-400 text-lg">Description:</p>
+                            <p className="text-gray-400 text-lg">Description:</p>
                             <p className="text-text-secondary">{description}</p>
                         </div>
                     </div>
