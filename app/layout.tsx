@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: "Waleed Georgy",
   description: "Welcome to my corner!",
   creator: "Waleed Georgy",
+  keywords: [
+    "nextjs", "react", "portfolio", "resume"],
 };
 
 export default function RootLayout({
