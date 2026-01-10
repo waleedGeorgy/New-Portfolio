@@ -57,7 +57,7 @@ const TimelineSubtitle: FC<TimelineSubtitleProps> = ({ subtitle, tag, link }) =>
     return (
         <div className="group text-neutral-400 flex items-center font-normal">
             {/* The subtitle (can be a link if specified) */}
-            <p className={cn("text-[14px] leading-6 mt-1 transition-colors duration-200 ease-in-out", link && "group-hover:text-neutral-200 cursor-pointer underline underline-offset-2")}>
+            <p className={cn("text-sm leading-6 mt-1 transition-colors duration-200 ease-in-out", link && "group-hover:text-neutral-200 cursor-pointer underline underline-offset-2")}>
                 {subtitle}
             </p>
             {link && <FiArrowUpRight className="group-hover:text-neutral-200 transition-colors duration-200 ease-in-out" />}

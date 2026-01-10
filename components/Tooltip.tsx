@@ -12,7 +12,7 @@ const Tooltip: FC<TooltipProps> = ({ title, icon }) => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <div className={cn("link relative bg-[#2D2C33] w-11 h-11 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900",
+        <div className={cn("link relative bg-[#2D2C33] size-11 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900",
             "border border-border rounded-xl",
             "hover:scale-110 transition-all duration-200")}
             onMouseEnter={() => setHovered(true)}
