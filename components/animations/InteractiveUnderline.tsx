@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 export default function SvgCurve() {
   const path = useRef<SVGPathElement | null>(null);
@@ -55,15 +55,17 @@ export default function SvgCurve() {
     }
   };
 
-  const setPath = (value: number) => {
-    const width = window.innerWidth * 0.7;
+  const setPath = useCallback(
+    (value: number) => {
+      const width = window.innerWidth * 0.7;
 
-    path.current?.setAttributeNS(
-      null,
-      "d",
-      `M 0 50 Q ${width * x} ${50 + value} ${width} 50`
-    );
-  };
+      path.current?.setAttributeNS(
+        null,
+        "d",
+        `M 0 50 Q ${width * x} ${50 + value} ${width} 50`
+      );
+    }, [x]
+  );
 
   useEffect(() => {
     setPath(progress);
