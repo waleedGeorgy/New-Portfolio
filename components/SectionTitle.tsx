@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import SvgCurve from "./animations/InteractiveUnderline";
 
 interface SectionTitleProps {
@@ -7,7 +7,7 @@ interface SectionTitleProps {
     icon?: ReactNode
 }
 
-const SectionTitle: FC<SectionTitleProps> = ({ number, title, icon }) => {
+const SectionTitle = ({ number, title, icon }: SectionTitleProps) => {
     return (
         <div className="relative my-10 px-8 z-10">
             {/* Section number */}

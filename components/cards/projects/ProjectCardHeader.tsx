@@ -1,5 +1,3 @@
-// If you want to add a toggle indicator to the header
-import { FC } from "react";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import { FiArrowUpRight } from "react-icons/fi";
@@ -11,9 +9,7 @@ interface ProjectCardHeaderProps {
     isExpanded?: boolean;
 }
 
-const ProjectCardHeader: FC<ProjectCardHeaderProps> = ({
-    title, tag, link, isExpanded
-}) => {
+const ProjectCardHeader = ({ title, tag, link, isExpanded }: ProjectCardHeaderProps) => {
     return (
         <div className="flex items-center justify-between px-5 py-4 text-primary-foreground">
             <div className="flex flex-col gap-1">

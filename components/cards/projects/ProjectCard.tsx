@@ -1,4 +1,4 @@
-import { FC, useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import ProjectCardHeader from "./ProjectCardHeader";
 
@@ -13,9 +13,7 @@ interface ProjectCardProps {
     onClick: () => void;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({
-    title, tag, photo, link, techStack, description, isExpanded, onClick
-}) => {
+const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpanded, onClick }: ProjectCardProps) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const [contentHeight, setContentHeight] = useState<number>(0);
 

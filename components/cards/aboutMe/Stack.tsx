@@ -167,7 +167,7 @@ export const myStack = [
         ]
     },
     {
-        name: "DBs",
+        name: "DBMSs",
         stack: [
             {
                 id: 0,

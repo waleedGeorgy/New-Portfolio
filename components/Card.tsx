@@ -9,13 +9,10 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ title, children, className }) => {
     return (
-        <div className={cn("relative bg-primary-background w-full h-fit rounded-xl border border-border p-6 text-primary-foreground overflow-hidden",
-            className)}>
+        <div className={cn("relative bg-primary-background w-full h-fit rounded-xl border border-border p-6 text-primary-foreground overflow-hidden", className)}>
             <div className="flex flex-col gap-y-6">
                 {/* Card title */}
-                {title && (
-                    <p className="font-homenaje tracking-wide capitalize font-bold text-2xl">{title}</p>
-                )}
+                <p className="font-homenaje tracking-wide capitalize font-bold text-2xl">{title}</p>
                 {/* Card body */}
                 {children}
             </div>

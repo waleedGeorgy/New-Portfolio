@@ -17,8 +17,6 @@ const OtherSkills = () => {
     )
 }
 
-export default OtherSkills
-
 const SkillItem = ({ skill, level }: { skill: string; level: number }) => {
     return (
         <div className="flex flex-row items-center gap-3">
@@ -30,3 +28,5 @@ const SkillItem = ({ skill, level }: { skill: string; level: number }) => {
         </div>
     )
 }
+
+export default OtherSkills;

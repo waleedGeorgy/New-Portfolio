@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +22,7 @@ interface TimelineItemProps {
     withoutDate?: boolean
 };
 
-export const TimelineItem: FC<TimelineItemProps> = ({ date, title, subtitle, link, tag, withoutDate }) => {
+export const TimelineItem = ({ date, title, subtitle, link, tag, withoutDate }: TimelineItemProps) => {
     return (
         <div className="flex gap-8 md:gap-4 lg:gap-6 justify-start relative">
             {/* Left side date */}
@@ -53,7 +53,7 @@ interface TimelineSubtitleProps {
     link?: string
 };
 
-const TimelineSubtitle: FC<TimelineSubtitleProps> = ({ subtitle, tag, link }) => {
+const TimelineSubtitle = ({ subtitle, tag, link }: TimelineSubtitleProps) => {
     return (
         <div className="group text-neutral-400 flex items-center font-normal">
             {/* The subtitle (can be a link if specified) */}
@@ -62,8 +62,8 @@ const TimelineSubtitle: FC<TimelineSubtitleProps> = ({ subtitle, tag, link }) =>
             </p>
             {link && <FiArrowUpRight className="group-hover:text-neutral-200 transition-colors duration-200 ease-in-out" />}
             {tag &&
-                <div className="ms-2 mt-1 rounded-[20px] bg-gradient-to-bl from-purple-darkness to-green-benzol py-0.7 px-1.5">
-                    <p className="text-[14px] font-light text-white">{tag}</p>
+                <div className="ms-2 mt-1 rounded-2xl bg-gradient-to-bl from-purple-darkness to-blue-cosmos px-2">
+                    <p className="text-sm text-white">{tag}</p>
                 </div>
             }
         </div>

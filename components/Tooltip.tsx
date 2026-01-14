@@ -1,31 +1,25 @@
-import Image from "next/image";
-import { FC, useState } from "react";
 import { cn } from "@/lib/utils";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import Image from "next/image";
+import { useState } from "react";
 
-interface TooltipProps {
-    title: string,
-    icon: string | StaticImport
-}
-
-const Tooltip: FC<TooltipProps> = ({ title, icon }) => {
-    const [hovered, setHovered] = useState(false);
+const Tooltip = ({ title, icon }: { title: string, icon: string }) => {
+    const [hovered, setHovered] = useState<boolean>(false);
 
     return (
-        <div className={cn("link relative bg-[#2D2C33] size-11 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900",
-            "border border-border rounded-xl",
-            "hover:scale-110 transition-all duration-200")}
+        <div className="link relative bg-[#2D2C33] size-11 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900 border border-border rounded-xl hover:scale-110 transition-all duration-200"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
             {/* Stack icon */}
             <div className="size-7">
-                <Image src={icon} alt={title} className="w-full h-full overflow-clip object-contain" />
+                <Image src={icon} alt={title} className="size-full overflow-clip object-contain" />
             </div>
             {/* Show popup with the name of the technology on hover */}
             {hovered &&
-                <div className="absolute -top-6 bg-black/[0.2] py-0.8 px-2 rounded-lg transition-all duration-200">
-                    <p className="font-homenaje tracking-wide whitespace-nowrap">{title}</p>
+                <div className={cn(
+                    "absolute bg-black/[0.75] px-2 py-1 rounded-lg transition-all duration-500 ease-out pointer-events-none", hovered ? "opacity-100 -translate-y-9 visible" : "opacity-0 -translate-y-0 invisible"
+                )}>
+                    <p className="font-homenaje tracking-wide whitespace-nowrap text-sm">{title}</p>
                 </div>
             }
         </div>

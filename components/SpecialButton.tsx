@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface SpecialButtonProps {
     text: string,
@@ -7,7 +7,7 @@ interface SpecialButtonProps {
     link?: string
 }
 
-const SpecialButton: FC<SpecialButtonProps> = ({ text, icon, link }) => {
+const SpecialButton = ({ text, icon, link }: SpecialButtonProps) => {
     return (
         <Link className="special-btn" href={link!}>
             <div className="group md:bg-[rgb(12,29,37)] bg-[rgb(21,21,21)] hover:bg-transparent text-primary-foreground hover:text-black rounded-full py-2 px-6 flex items-center gap-2.5 cursor-pointer transition-all duration-200 ease-in-out">

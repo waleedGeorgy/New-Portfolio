@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { CgSpinnerTwoAlt } from "react-icons/cg";
 
 const LiveClock = ({ timeZone }: { timeZone: string }) => {
-    const [time, setTime] = useState("");
+    const [time, setTime] = useState<string>("");
 
     {/* Initializing and running the clock */ }
     useEffect(() => {

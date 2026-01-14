@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { scale, slide } from "./animation";
@@ -11,7 +11,7 @@ interface NavLinkProps {
   };
 }
 
-const NavLink: FC<NavLinkProps> = ({ data }) => {
+const NavLink = ({ data }: NavLinkProps) => {
   const { title, href, index } = data;
   const [hovered, setHovered] = useState<boolean>(false);
 

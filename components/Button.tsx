@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -9,7 +9,7 @@ interface ButtonProps {
     className?: string
 }
 
-const Button: FC<ButtonProps> = ({ children, link, hasIcon, className }) => {
+const Button = ({ children, link, hasIcon, className }: ButtonProps) => {
     return (
         <>
             {link ? (
@@ -34,7 +34,7 @@ interface ButtonBodyProps {
     className?: string
 };
 
-const ButtonBody: FC<ButtonBodyProps> = ({ children, hasIcon, className }) => {
+const ButtonBody = ({ children, hasIcon, className }: ButtonBodyProps) => {
     return (
         <div className="cursor-pointer flex-none w-auto h-full">
             <div
