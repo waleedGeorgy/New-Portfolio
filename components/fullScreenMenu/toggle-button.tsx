@@ -5,9 +5,8 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="animate-grow_in shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-[100] p-4 md:py-2 md:px-5 rounded-full bg-blue-cosmos hover:bg-[#4c5c7c] cursor-pointer transition-all duration-300 ease-in-out flex items-center gap-3"
+      className="animate-grow_in shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-[100] p-4 rounded-full bg-blue-cosmos hover:bg-[#4c5c7c] cursor-pointer transition-all duration-300 ease-in-out flex items-center gap-3"
     >
-      <h2 className="text-white text-lg hidden md:inline-block">Menu</h2>
       <div className="relative flex items-center justify-center">
         {/* Hamburger icon */}
         <div className="flex flex-col gap-y-1.5 transform transition-all duration-300 origin-center overflow-hidden">

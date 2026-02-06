@@ -62,7 +62,7 @@ const TimelineSubtitle = ({ subtitle, tag, link }: TimelineSubtitleProps) => {
             </p>
             {link && <FiArrowUpRight className="group-hover:text-neutral-200 transition-colors duration-200 ease-in-out" />}
             {tag &&
-                <div className="ms-2 mt-1 rounded-2xl bg-gradient-to-bl from-purple-darkness to-blue-cosmos px-2">
+                <div className="ms-2 mt-1 rounded-2xl bg-indigo-700 px-2">
                     <p className="text-sm text-white">{tag}</p>
                 </div>
             }

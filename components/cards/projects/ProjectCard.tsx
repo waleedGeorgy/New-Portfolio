@@ -52,7 +52,7 @@ const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpand
                             <p className="text-gray-400 text-lg">Tech stack:</p>
                             <div className="flex flex-wrap gap-2 mt-1">
                                 {techStack.map(tech => (
-                                    <span key={tech} className="bg-purple-darkness text-primary px-2.5 py-0.5 rounded-full text-sm font-light">
+                                    <span key={tech} className="bg-indigo-700 text-primary px-2.5 py-0.5 rounded-full text-sm font-light">
                                         {tech}
                                     </span>
                                 ))}
