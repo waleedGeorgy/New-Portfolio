@@ -12,7 +12,8 @@ import PostgreSQL from "@/public/images/stack/postgresql.svg";
 import MongoDB from "@/public/images/stack/mongodb.svg";
 import Convex from "@/public/images/stack/convex-logo.png";
 import Prisma from "@/public/images/stack/prisma.svg";
-import Motoko from "@/public/images/stack/motoko.webp";
+import Supabase from "@/public/images/stack/supabase.png";
+import Neon from "@/public/images/stack/neon.png";
 import EJS from "@/public/images/stack/ejs.svg";
 import MUI from "@/public/images/stack/mui.svg";
 import Shadcn from "@/public/images/stack/shadcnui.svg";
@@ -27,7 +28,6 @@ import Git from "@/public/images/stack/git.svg";
 import GitHub from "@/public/images/stack/github.svg";
 import Postman from "@/public/images/stack/postman.svg";
 import Docker from "@/public/images/stack/docker.svg";
-import ICP from "@/public/images/stack/internetcomputer.svg";
 import Card from "@/components/Card";
 import Tooltip from "@/components/Tooltip";
 
@@ -148,11 +148,6 @@ export const myStack = [
                 id: 2,
                 title: "EJS",
                 icon: EJS
-            },
-            {
-                id: 3,
-                title: "Motoko",
-                icon: Motoko
             }
         ]
     },
@@ -188,6 +183,16 @@ export const myStack = [
                 id: 3,
                 title: "Prisma",
                 icon: Prisma
+            },
+            {
+                id: 4,
+                title: "Supabase",
+                icon: Supabase
+            },
+            {
+                id: 5,
+                title: "Neon",
+                icon: Neon
             }
         ]
     },
@@ -238,11 +243,6 @@ export const myStack = [
                 id: 3,
                 title: "Docker",
                 icon: Docker
-            },
-            {
-                id: 4,
-                title: "Internet Computer",
-                icon: ICP
             }
         ]
     }
