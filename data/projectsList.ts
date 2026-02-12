@@ -3,6 +3,7 @@ import GlanceImage from "@/public/images/projects_gallery/glance.png";
 import GroovityImage from "@/public/images/projects_gallery/groovity.png";
 import SemicolonImage from "@/public/images/projects_gallery/semicolon.png";
 import ChatterboxImage from "@/public/images/projects_gallery/chatterbox.png";
+import MnemoImage from "@/public/images/projects_gallery/mnemo.png";
 
 const projectsList = [
   {
@@ -81,6 +82,22 @@ const projectsList = [
     ],
     description:
       "A MERN, real-time messaging app, that allows image and text sharing. Supports profile customization, online status indication, and more. Provides a wide variety of themes to choose from.",
+  },
+  {
+    image: MnemoImage,
+    title: "Mnemo.ai",
+    link: "https://mnemo-ai-mu.vercel.app",
+    tag: "A note taking app with AI summarization capabilities",
+    techStack: [
+      "NodeJS",
+      "TypeScript",
+      "NextJS",
+      "Tailwind",
+      "Supabase",
+      "Puter.js",
+    ],
+    description:
+      "A web app for taking note. Offers full CRUD capabilities, as well as AI note summarization and question answering. Supports full log in and sign up flows.",
   },
 ];
 
