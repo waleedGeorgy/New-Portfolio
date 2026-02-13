@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main role="main">
       <div className="grid grid-cols-1 md:grid-cols-[25%_75%] min-h-screen">
-        <section className="pt-6 lg:p-0 md:sticky md:top-0 md:self-start md:bg-blue-cosmos/35">
+        <section className="pt-6 lg:p-0 md:sticky md:top-0 md:self-start md:bg-blue-cosmos/60">
           <div className="md:h-screen md:flex md:items-center md:justify-center">
             <ProfileSection />
           </div>

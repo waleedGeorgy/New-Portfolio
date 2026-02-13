@@ -11,7 +11,7 @@ import { ReactNode } from "react";
 const Contact = () => {
     return (
         <Card title="Contact Me">
-            <div className="flex flex-wrap items-center align-center gap-6" id="contactMe">
+            <div className="flex flex-wrap items-center align-center gap-6 text-gray-200" id="contactMe">
                 <ContactItem
                     link="mailto:waleedgeorge1009@gmail.com"
                     icon={<Image src={GoogleLogo} alt="Google logo" className="size-8 group-hover:scale-125 transition-all duration-300 ease-in-out" />}

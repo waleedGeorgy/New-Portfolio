@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { PT_Sans, Homenaje } from "next/font/google";
-import "./globals.css";
 import { cn } from "@/lib/utils";
-import Background from "@/components/Noise-Background";
 import Cursor from "@/components/animations/AnimatedCursor";
+import "./globals.css";
 
 const MainFont = PT_Sans({ weight: "400", subsets: ["latin"] });
 const HomenajeFont = Homenaje({ weight: "400", subsets: ["latin"], variable: "--font-homenaje" });
@@ -24,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(MainFont.className, HomenajeFont.variable)}>
-        <Background />
         <Cursor color="whitesmoke" />
         {children}
       </body>

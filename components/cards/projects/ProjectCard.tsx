@@ -23,7 +23,7 @@ const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpand
 
     return (
         <div
-            className={`rounded-xl transition-all duration-500 ease-in-out overflow-hidden cursor-pointer transform-gpu outline outline-border ${isExpanded ? 'shadow-xl z-10 bg-gray-800' : 'hover:shadow-lg bg-secondary-background'}`}
+            className={`rounded-xl transition-all duration-500 ease-in-out overflow-hidden cursor-pointer transform-gpu border border-zinc-800 ${isExpanded ? 'shadow-xl z-10 bg-gray-800' : 'hover:shadow-lg bg-zinc-900'}`}
             onClick={onClick}
         >
             <ProjectCardHeader title={title} tag={tag} link={link} isExpanded={isExpanded} />
@@ -52,7 +52,7 @@ const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpand
                             <p className="text-gray-400 text-lg">Tech stack:</p>
                             <div className="flex flex-wrap gap-2 mt-1">
                                 {techStack.map(tech => (
-                                    <span key={tech} className="bg-indigo-700 text-primary px-2.5 py-0.5 rounded-full text-sm font-light">
+                                    <span key={tech} className="bg-indigo-700 shadow-lg text-primary px-2.5 py-0.5 rounded-full text-sm font-light">
                                         {tech}
                                     </span>
                                 ))}
@@ -66,7 +66,7 @@ const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpand
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

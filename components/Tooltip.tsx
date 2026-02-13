@@ -17,9 +17,9 @@ const Tooltip = ({ title, icon }: { title: string, icon: string }) => {
             {/* Show popup with the name of the technology on hover */}
             {hovered &&
                 <div className={cn(
-                    "absolute bg-black/[0.75] px-2 py-1 rounded-lg transition-all duration-500 ease-out pointer-events-none", hovered ? "opacity-100 -translate-y-9 visible" : "opacity-0 -translate-y-0 invisible"
+                    "absolute bg-black/[0.50] backdrop-blur-lg px-2 py-1 rounded-lg transition-all duration-500 ease-out pointer-events-none", hovered ? "opacity-100 -translate-y-9 visible" : "opacity-0 -translate-y-0 invisible"
                 )}>
-                    <p className="font-homenaje tracking-wide whitespace-nowrap text-sm">{title}</p>
+                    <p className="font-homenaje text-gray-200 tracking-wider whitespace-nowrap text-sm">{title}</p>
                 </div>
             }
         </div>
