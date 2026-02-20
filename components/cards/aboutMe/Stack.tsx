@@ -6,12 +6,14 @@ import TS from "@/public/images/stack/typescript.svg";
 import Python from "@/public/images/stack/python.webp";
 import React from "@/public/images/stack/react.svg";
 import Next from "@/public/images/stack/nextdotjs.svg";
+import TanStack from "@/public/images/stack/tanstack.png";
 import Node from "@/public/images/stack/nodedotjs.svg";
 import Express from "@/public/images/stack/express.svg";
 import PostgreSQL from "@/public/images/stack/postgresql.svg";
 import MongoDB from "@/public/images/stack/mongodb.svg";
 import Convex from "@/public/images/stack/convex-logo.png";
 import Prisma from "@/public/images/stack/prisma.svg";
+import Drizzle from "@/public/images/stack/drizzle.svg";
 import Supabase from "@/public/images/stack/supabase.png";
 import Neon from "@/public/images/stack/neon.png";
 import EJS from "@/public/images/stack/ejs.svg";
@@ -158,6 +160,11 @@ export const myStack = [
                 id: 1,
                 title: "NextJS",
                 icon: Next
+            },
+            {
+                id: 2,
+                title: "TanStack",
+                icon: TanStack
             }
         ]
     },
@@ -186,11 +193,16 @@ export const myStack = [
             },
             {
                 id: 4,
+                title: "Drizzle",
+                icon: Drizzle
+            },
+            {
+                id: 5,
                 title: "Supabase",
                 icon: Supabase
             },
             {
-                id: 5,
+                id: 6,
                 title: "Neon",
                 icon: Neon
             }
