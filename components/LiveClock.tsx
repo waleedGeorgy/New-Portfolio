@@ -18,9 +18,9 @@ const LiveClock = ({ timeZone }: { timeZone: string }) => {
     return (
         <>
             {time ?
-                <time className="text-lg md:text-xl lg:text-2xl text-gray-300 font-homenaje">Local time: {time}</time>
+                <time className="text-lg tracking-wide md:text-xl lg:text-2xl text-gray-300 font-homenaje">Local time: {time}</time>
                 :
-                <p className="animate-pulse text-gray-400 text-lg md:text-xl lg:text-2xl flex flex-row items-center gap-1.5 font-homenaje">Loading local time<CgSpinnerTwoAlt className="animate-spin" /></p>
+                <p className="text-gray-400 text-lg md:text-xl lg:text-2xl flex flex-row items-center gap-1.5 font-homenaje">Loading local time<CgSpinnerTwoAlt className="animate-spin" /></p>
             }
         </>
     );

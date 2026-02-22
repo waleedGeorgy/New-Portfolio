@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { PT_Sans, Homenaje } from "next/font/google";
-import { cn } from "@/lib/utils";
-import Cursor from "@/components/animations/AnimatedCursor";
 import "./globals.css";
 
 const MainFont = PT_Sans({ weight: "400", subsets: ["latin"] });
@@ -22,8 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(MainFont.className, HomenajeFont.variable)}>
-        <Cursor color="whitesmoke" />
+      <body className={`${MainFont.className} ${HomenajeFont.variable} antialiased`}>
         {children}
       </body>
     </html>

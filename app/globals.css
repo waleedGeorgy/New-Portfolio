@@ -7,7 +7,19 @@ html {
 }
 
 body {
-  background: #020202;
+  background: rgb(16, 19, 20);
+}
+
+.glass {
+  background-color: color-mix(in srgb, #1a2329 70%, transparent);
+  backdrop-filter: blur(16px);
+  border: 1px solid color-mix(in srgb, #242b32 60%, transparent);
+}
+
+.glass-strong {
+  background-color: color-mix(in srgb, #2a343e 70%, transparent);
+  backdrop-filter: blur(24px);
+  border: 1px solid color-mix(in srgb, #242b32 70%, transparent);
 }
 
 /* Special button */

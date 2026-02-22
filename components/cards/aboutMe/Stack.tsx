@@ -45,7 +45,7 @@ export default function Stack() {
                                 <p className="text-gray-400">{item.name}</p>
                             </div>
                             {/* Individual stack item */}
-                            <div className="flex flex-wrap items-center gap-3">
+                            <div className="flex flex-wrap items-center gap-2.5">
                                 {item.stack.map((entry) => (
                                     <Tooltip
                                         key={entry.id}
