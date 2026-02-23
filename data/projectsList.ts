@@ -31,13 +31,13 @@ const projectsList = [
       "Socket.io",
     ],
     description:
-      "A web app for playing music and chatting with friends in real-time, made with MERN. Contains an admin panel for organizing, deleting, and adding songs and albums. Shows friends' activity in real-time.",
+      "A web app for playing music, made with MERN. Contains an admin panel for organizing, deleting, and adding songs and albums. Shows friends' activity and allows chatting with them in real-time.",
   },
   {
     image: GlanceImage,
     title: "Glance",
     link: "https://glance-3pwz.onrender.com/",
-    tag: "An open source Twitter/X clone",
+    tag: "An open source X clone",
     techStack: [
       "ReactJS",
       "ExpressJS",
@@ -47,7 +47,7 @@ const projectsList = [
       "Tailwind",
     ],
     description:
-      "A Twitter/X clone that supports various features, such as following, adding posts and comments, liking, profile page customization, posts filtering, among others. Made with MERN. Supports logging in and signing up, and proper cookies and sessions creation.",
+      "A Twitter/X clone that supports various features, such as following, adding posts and comments, liking, profile page customization, posts filtering, among others. Made with MERN. Supports logging in and signing up, with proper cookies and sessions creation.",
   },
   {
     image: AuthorityImage,
@@ -63,7 +63,7 @@ const projectsList = [
       "Tailwind",
     ],
     description:
-      "A comprehensive, and reusable authentication toolkit. Supports authentication using credentials, OAuth (Google & GitHub), password verification and restoration, email verification, cookies and sessions creation, etc... Made with NextJS and Auth.js.",
+      "A comprehensive authentication toolkit. Supports authentication using credentials, OAuth (Google & GitHub), password verification and restoration, email verification, cookies and sessions creation, etc... Made with NextJS and Auth.js.",
   },
   {
     image: ChatterboxImage,
@@ -81,7 +81,7 @@ const projectsList = [
       "Socket.io",
     ],
     description:
-      "A MERN, real-time messaging app, that allows image and text sharing. Supports profile customization, online status indication, and more. Provides a wide variety of themes to choose from.",
+      "A MERN, real-time messaging app, that allows image and text sharing. Supports profile customization, an online status indication, and more. Provides a wide variety of themes to choose from, provided by DaisyUI.",
   },
   {
     image: MnemoImage,
@@ -97,7 +97,7 @@ const projectsList = [
       "Puter.js",
     ],
     description:
-      "A web app for taking note. Offers full CRUD capabilities, as well as AI note summarization and question answering. Supports full log in and sign up flows.",
+      "A web app for taking notes. Offers full CRUD capabilities, as well as AI note summarization and question answering. Supports full log in and sign up flows.",
   },
 ];
 

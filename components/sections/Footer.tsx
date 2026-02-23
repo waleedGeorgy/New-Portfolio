@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="px-3.5 lg:px-5 pt-14 pb-4 flex flex-wrap items-center justify-around gap-x-2 gap-y-3 bg-blue-cosmos/80 w-full" role="contentinfo">
             <Image src={Signature} alt="Signature of Waleed Georgy" className="w-40" />
-            <div className="flex flex-row flex-wrap items-center gap-6 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
                 <Link href="#landing" className="flex text-gray-300 hover:text-primary-foreground duration-200 transition-colors ease-in-out items-center gap-1">
                     <FaArrowUp className="inline size-3" />
                     <span>Back to top</span>
