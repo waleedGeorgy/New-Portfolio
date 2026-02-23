@@ -5,7 +5,7 @@ const Tooltip = ({ title, icon }: { title: string, icon: string }) => {
     const [hovered, setHovered] = useState<boolean>(false);
 
     return (
-        <div className="link relative bg-zinc-800 size-12 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900 border border-border rounded-xl hover:brightness-125 hover:scale-110 transition-all duration-200"
+        <div className="link relative bg-zinc-800 size-12 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900 border border-border rounded-xl hover:brightness-110 hover:scale-110 transition-all duration-200"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >

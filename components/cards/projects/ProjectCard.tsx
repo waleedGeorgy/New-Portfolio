@@ -23,7 +23,7 @@ const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpand
 
     return (
         <div
-            className={`rounded-xl transition-all duration-500 ease-in-out overflow-hidden cursor-pointer ${isExpanded ? 'shadow-xl z-10 glass-strong' : 'glass'}`}
+            className={`rounded-xl transition-all duration-300 ease-in-out overflow-hidden cursor-pointer ${isExpanded ? 'shadow-xl glass-strong' : 'glass hover:bg-[#2a343e]/70'}`}
             onClick={onClick}
         >
             <ProjectCardHeader title={title} tag={tag} link={link} isExpanded={isExpanded} />

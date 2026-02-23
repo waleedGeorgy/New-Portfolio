@@ -30,6 +30,8 @@ import Git from "@/public/images/stack/git.svg";
 import GitHub from "@/public/images/stack/github.svg";
 import Postman from "@/public/images/stack/postman.svg";
 import Docker from "@/public/images/stack/docker.svg";
+import JSON from "@/public/images/stack/json.svg";
+import Markdown from "@/public/images/stack/markdown.svg";
 import Card from "@/components/Card";
 import Tooltip from "@/components/Tooltip";
 
@@ -118,13 +120,13 @@ export const myStack = [
             },
             {
                 id: 3,
-                title: "MaterialUI",
-                icon: MUI
+                title: "Shadcn",
+                icon: Shadcn
             },
             {
                 id: 4,
-                title: "Shadcn",
-                icon: Shadcn
+                title: "MaterialUI",
+                icon: MUI
             },
             {
                 id: 5,
@@ -183,29 +185,29 @@ export const myStack = [
             },
             {
                 id: 2,
-                title: "Convex",
-                icon: Convex
-            },
-            {
-                id: 3,
-                title: "Prisma",
-                icon: Prisma
-            },
-            {
-                id: 4,
-                title: "Drizzle",
-                icon: Drizzle
-            },
-            {
-                id: 5,
                 title: "Supabase",
                 icon: Supabase
             },
             {
-                id: 6,
+                id: 3,
+                title: "Convex",
+                icon: Convex
+            },
+            {
+                id: 4,
                 title: "Neon",
                 icon: Neon
-            }
+            },
+            {
+                id: 5,
+                title: "Prisma",
+                icon: Prisma
+            },
+            {
+                id: 6,
+                title: "Drizzle",
+                icon: Drizzle
+            },
         ]
     },
     {
@@ -255,7 +257,17 @@ export const myStack = [
                 id: 3,
                 title: "Docker",
                 icon: Docker
-            }
+            },
+            {
+                id: 4,
+                title: "JSON",
+                icon: JSON
+            },
+            {
+                id: 5,
+                title: "Markdown",
+                icon: Markdown
+            },
         ]
     }
 ];
