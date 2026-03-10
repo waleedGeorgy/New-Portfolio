@@ -17,10 +17,10 @@ const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>
       exit="exit"
       className="h-screen w-full bg-neutral-950 fixed top-0 right-0 text-primary-foreground z-40"
     >
-      <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block xs:w-48 sm:inline-block sm:w-64 relative top-12 left-12" />
+      <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block xs:w-48 sm:w-64 relative top-12 left-12" />
       {/* Menu list*/}
       <nav className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pr-8 py-4 w-full font-homenaje bg-blue-cosmos/50" role="navigation">
-        <div className="flex flex-col justify-center items-end" onClick={() => setOpen(prev => !prev)}>
+        <div className="flex flex-col justify-center items-end gap-1" onClick={() => setOpen(prev => !prev)}>
           {navItems.map((item, index) => (
             <NavLink key={index} data={{ ...item, index }} />
           ))}
@@ -28,12 +28,12 @@ const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>
       </nav>
       {/* Menu footer */}
       <div className="w-full absolute bottom-8 px-6">
-        <div className="flex flex-wrap items-center justify-start gap-x-8 gap-y-4">
-          <div className="flex items-center gap-3 text-secondary-foreground hover:text-white transition-colors duration-200 ease-in-out text-sm">
-            <Link href="https://github.com/waleedGeorgy/New-Portfolio" target="_blank"><Image src={GitHub} alt="GitHub icon" className="cursor-pointer size-4" /></Link>
-            <Link href="https://github.com/waleedGeorgy/New-Portfolio" target="_blank"><span className="capitalize link cursor-pointer">GitHub</span></Link>
-          </div>
-          <div className="flex items-center text-secondary-foreground text-sm">
+        <div className="flex flex-wrap items-center justify-start gap-x-4 gap-y-2">
+          <Link href="https://github.com/waleedGeorgy/New-Portfolio" target="_blank" className="flex items-center gap-2 text-secondary-foreground hover:text-white transition-colors duration-200 ease-in-out text-xs xs:text-sm">
+            <Image src={GitHub} alt="GitHub icon" className="cursor-pointer size-3 xs:size-4" />
+            <span className="capitalize link cursor-pointer">GitHub</span>
+          </Link>
+          <div className="flex items-center text-secondary-foreground text-xs xs:text-sm">
             <Link href="/">All rights reserved ©{new Date().getFullYear()}</Link>
           </div>
         </div>
