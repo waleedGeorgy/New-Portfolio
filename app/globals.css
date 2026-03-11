@@ -21,8 +21,6 @@ body {
   backdrop-filter: blur(24px);
   border: 1px solid color-mix(in srgb, #242b32 70%, transparent);
 }
-
-/* Special button */
 .special-btn {
   background-image: linear-gradient(
     135deg,
@@ -36,8 +34,6 @@ body {
   display: inline-block;
   padding: 0.2vw;
 }
-
-/* The fadeout effect of the section number */
 .bottom-fade {
   background-image: linear-gradient(
     0deg,
@@ -45,27 +41,23 @@ body {
     rgba(255, 255, 255) 100%
   );
 }
-
 .line {
   height: 2px;
   position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
-
 .line svg {
   position: absolute;
   height: 100px;
   width: 100%;
   top: -50px;
 }
-
 .line svg path {
   stroke-width: 1px;
   stroke: whitesmoke;
   fill: none;
 }
-
 .box {
   height: 40px;
   width: 100%;
