@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: rgb(16, 19, 20);
-}
-
 .glass {
   background-color: color-mix(in srgb, #1a2329 70%, transparent);
   backdrop-filter: blur(16px);

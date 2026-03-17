@@ -2,10 +2,10 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Tooltip = ({ title, icon }: { title: string, icon: string }) => {
-    const [hovered, setHovered] = useState<boolean>(false);
+    const [hovered, setHovered] = useState(false);
 
     return (
-        <div className="link relative bg-zinc-800 size-12 transform cursor-pointer grid place-items-center shadow-md shadow-slate-900 border border-border rounded-xl hover:brightness-110 hover:scale-110 transition-all duration-200"
+        <div className="link relative bg-zinc-800 size-12 transform cursor-pointer grid place-items-center shadow-sm shadow-black/50 border border-border rounded-lg hover:brightness-110 hover:scale-110 hover:shadow-md hover:shadow-black/50 transition-all duration-200"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >

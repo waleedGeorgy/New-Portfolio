@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import projectsList from '@/data/projectsList';
+import { projectsList } from '@/data/projectsList';
 import ProjectCard from './ProjectCard';
 
 export default function ProjectsGallery() {

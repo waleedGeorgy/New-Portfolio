@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpanded, onClick }: ProjectCardProps) => {
     const contentRef = useRef<HTMLDivElement>(null);
-    const [contentHeight, setContentHeight] = useState<number>(0);
+    const [contentHeight, setContentHeight] = useState(0);
 
     useEffect(() => {
         if (contentRef.current) setContentHeight(contentRef.current.scrollHeight);
@@ -48,20 +48,15 @@ const ProjectCard = ({ title, tag, photo, link, techStack, description, isExpand
                     {/* Additional project content */}
                     <div className="space-y-4 text-primary-foreground pb-4">
                         {/* Project tech stack */}
-                        <div>
-                            <p className="text-gray-400 text-lg">Tech stack:</p>
-                            <div className="flex flex-wrap gap-2 mt-1">
-                                {techStack.map(tech => (
-                                    <span key={tech} className="bg-[rgb(2,110,111)] shadow-lg text-primary-foreground px-2.5 py-0.5 rounded-full text-sm">
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
+                        <div className="flex flex-wrap gap-2 mt-1">
+                            {techStack.map(tech => (
+                                <span key={tech} className="bg-[rgb(2,110,111)] shadow-lg text-primary-foreground px-2.5 py-0.5 rounded-full text-sm">
+                                    {tech}
+                                </span>
+                            ))}
                         </div>
                         {/* Project description */}
-                        <div>
-                            <p className="text-primary-foreground">{description}</p>
-                        </div>
+                        <p className="text-primary-foreground">{description}</p>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Link from "next/link"
 import Image from "next/image";
 import { FaWhatsapp, FaTelegram } from "react-icons/fa";
@@ -6,7 +7,6 @@ import { FaFacebook } from "react-icons/fa6";
 import Card from "@/components/Card"
 import GoogleLogo from "@/public/images/google-icon.png";
 import InstagramLogo from "@/public/images/instagram-logo.png";
-import { ReactNode } from "react";
 
 const Contact = () => {
     return (

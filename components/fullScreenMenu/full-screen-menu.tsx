@@ -15,7 +15,7 @@ const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen w-full bg-neutral-950 fixed top-0 right-0 text-primary-foreground z-40"
+      className="h-screen w-full bg-[#101314] fixed top-0 right-0 text-primary-foreground z-40"
     >
       <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block xs:w-48 sm:w-64 relative top-12 left-12" />
       {/* Menu list*/}
@@ -34,7 +34,7 @@ const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>
             <span className="capitalize link cursor-pointer">GitHub</span>
           </Link>
           <div className="flex items-center text-secondary-foreground text-xs xs:text-sm">
-            <Link href="/">All rights reserved ©{new Date().getFullYear()}</Link>
+            <span>All rights reserved ©{new Date().getFullYear()}</span>
           </div>
         </div>
       </div>

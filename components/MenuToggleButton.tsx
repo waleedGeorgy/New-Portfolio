@@ -4,7 +4,7 @@ import FullScreenMenu from "./fullScreenMenu/full-screen-menu";
 import ToggleButton from "./fullScreenMenu/toggle-button";
 
 export default function MenuToggleButton() {
-    const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <>

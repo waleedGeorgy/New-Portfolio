@@ -12,6 +12,7 @@ const OtherSkills = () => {
                 <SkillItem skill="Russian language" level={5} />
                 <SkillItem skill="Arabic language" level={5} />
                 <SkillItem skill="Communication" level={4} />
+                <SkillItem skill="AI Tools" level={4} />
             </div>
         </Card>
     )
@@ -22,7 +23,7 @@ const SkillItem = ({ skill, level }: { skill: string; level: number }) => {
         <div className="flex flex-row items-center gap-3">
             <h3 className="text-gray-400 w-36">{skill}</h3>
             {[...Array<React.ReactNode>(level)].map((_, id) => (
-                <p className="text-yellow-ripe" key={id}><BsStarFill /></p>
+                <BsStarFill key={id} className="text-yellow-ripe" />
             )
             )}
         </div>

@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${MainFont.className} ${HomenajeFont.variable} antialiased`}>
+      <body className={`${MainFont.className} ${HomenajeFont.variable} antialiased bg-[#101314]`}>
         {children}
       </body>
     </html>
