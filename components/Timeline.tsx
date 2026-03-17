@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-import { cn } from "@/lib/utils";
 
 const Timeline = ({ children }: { children: ReactNode }) => {
     return (
