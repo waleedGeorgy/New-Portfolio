@@ -2,7 +2,6 @@ const ParticleBackground = () => {
     return (
         <>
             <div className="absolute inset-0 hidden md:block overflow-hidden bg-blue-cosmos/50">
-                {/* Use fixed positions instead of random */}
                 <div className="absolute rounded-full animate-pulse" style={{
                     left: '15%',
                     top: '22%',

@@ -10,7 +10,6 @@ const Timeline = ({ children }: { children: ReactNode }) => {
 
 export default Timeline;
 
-// Timeline item component
 interface TimelineItemProps {
     date: string,
     title: string,
