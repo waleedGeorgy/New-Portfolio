@@ -6,20 +6,19 @@ const Tooltip = ({ title, icon }: { title: string, icon: string }) => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <div className="link relative bg-zinc-800 size-12 transform cursor-pointer grid place-items-center shadow-sm shadow-black/50 border border-border rounded-lg hover:brightness-110 hover:scale-110 hover:shadow-md hover:shadow-black/50 transition-all duration-200"
+        <div className="link relative bg-zinc-800 size-12 grid place-items-center border border-border rounded-lg hover:brightness-110 transition-all duration-300"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
             <div className="size-7">
                 <Image src={icon} alt={title} className="size-full overflow-clip object-contain" />
             </div>
-            {hovered &&
-                <div className={`
-                    absolute bg-black/[0.50] backdrop-blur-lg px-2 py-1 rounded-lg transition-all duration-500 ease-out pointer-events-none ${hovered ? "opacity-100 -translate-y-9 visible" : "opacity-0 -translate-y-0 invisible"}
-                `}>
-                    <p className="font-homenaje text-gray-200 tracking-wider whitespace-nowrap text-sm">{title}</p>
-                </div>
-            }
+            <div className={`
+                absolute bg-zinc-950 px-2.5 py-0.5 rounded-md pointer-events-none transition-all duration-300
+                ${hovered ? "opacity-100 -translate-y-9 scale-100" : "opacity-0 translate-y-0 scale-0"}
+            `}>
+                <p className="text-gray-200 whitespace-nowrap">{title}</p>
+            </div>
         </div>
     )
 };
