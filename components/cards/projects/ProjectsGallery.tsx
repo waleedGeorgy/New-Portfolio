@@ -1,3 +1,4 @@
+'use client'
 import { useState } from 'react';
 import { projectsList } from '@/data/projectsList';
 import ProjectCard from './ProjectCard';

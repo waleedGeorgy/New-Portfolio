@@ -1,3 +1,4 @@
+'use client'
 import { useCallback, useEffect, useRef } from "react";
 
 export default function SvgCurve() {
@@ -80,8 +81,6 @@ export default function SvgCurve() {
       window.removeEventListener("resize", handleResize);
     };
   }, [progress, setPath]);
-
-
 
   return (
     <div className="line">

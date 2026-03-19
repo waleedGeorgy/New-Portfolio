@@ -1,4 +1,5 @@
-import { FC, ReactNode, useRef, useState, MouseEvent } from "react";
+'use client'
+import { ReactNode, useRef, useState, MouseEvent } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -7,7 +8,7 @@ interface MagneticEffectProps {
     children: ReactNode
 };
 
-const MagneticEffect: FC<MagneticEffectProps> = ({ children, className }) => {
+const MagneticEffect = ({ children, className }: MagneticEffectProps) => {
     const ref = useRef<HTMLDivElement>(null);
     const [position, setPosition] = useState({ x: 0, y: 0 });
 

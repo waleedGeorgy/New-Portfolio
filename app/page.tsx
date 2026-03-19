@@ -1,4 +1,3 @@
-"use client";
 import ProfileSection from "@/components/sections/ProfileSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
