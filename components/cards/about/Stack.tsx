@@ -1,7 +1,6 @@
-
 import Card from "@/components/Card";
 import Tooltip from "@/components/Tooltip";
-import { myStack } from "@/data/projectsList";
+import { myStack } from "@/data/stackList";
 
 export default function Stack() {
     return (
