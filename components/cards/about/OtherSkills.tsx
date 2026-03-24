@@ -24,8 +24,7 @@ const SkillItem = ({ skill, level }: { skill: string; level: number }) => {
             <h3 className="text-gray-400 w-36">{skill}</h3>
             {[...Array<React.ReactNode>(level)].map((_, id) => (
                 <BsStarFill key={id} className="text-yellow-ripe" />
-            )
-            )}
+            ))}
         </div>
     )
 }

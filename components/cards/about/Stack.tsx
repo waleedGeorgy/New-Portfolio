@@ -23,8 +23,7 @@ export default function Stack() {
                             ))}
                         </div>
                     </div>
-                ))
-                }
+                ))}
             </div>
         </Card>
     );

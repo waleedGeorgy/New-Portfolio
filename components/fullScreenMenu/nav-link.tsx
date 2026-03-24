@@ -13,7 +13,8 @@ interface NavLinkProps {
 
 const NavLink = ({ data }: NavLinkProps) => {
   const { title, href, index } = data;
-  const [hovered, setHovered] = useState<boolean>(false);
+
+  const [hovered, setHovered] = useState(false);
 
   return (
     <motion.div
