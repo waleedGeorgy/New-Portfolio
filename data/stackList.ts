@@ -30,6 +30,7 @@ import Git from "@/public/images/stack/git.svg";
 import GitHub from "@/public/images/stack/github.svg";
 import Postman from "@/public/images/stack/postman.svg";
 import Docker from "@/public/images/stack/docker.svg";
+import GraphQL from "@/public/images/stack/graphql.svg";
 import JSON from "@/public/images/stack/json.svg";
 import Markdown from "@/public/images/stack/markdown.svg";
 
@@ -229,11 +230,16 @@ export const myStack = [
       },
       {
         id: 4,
+        title: "GraphQL",
+        icon: GraphQL,
+      },
+      {
+        id: 5,
         title: "JSON",
         icon: JSON,
       },
       {
-        id: 5,
+        id: 6,
         title: "Markdown",
         icon: Markdown,
       },
