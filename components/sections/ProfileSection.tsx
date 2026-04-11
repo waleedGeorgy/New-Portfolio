@@ -11,8 +11,8 @@ export default function ProfileSection() {
         <aside className="flex flex-col items-center gap-y-5 px-3" role="banner">
             {/* Profile image and name */}
             <div className="flex flex-col justify-center items-center gap-3">
-                <div className="relative md:size-[180px] lg:size-[212px] xs:size-[180px] size-[164px] rounded-full flex items-center justify-center bg-gradient-to-br from-purple-darkness to-yellow-ripe">
-                    <Image src={MyImage} alt="Waleed Georgy image" priority={true} className="md:size-44 lg:size-52 xs:size-44 size-40 rounded-full object-cover" />
+                <div className="relative md:size-[180px] lg:size-[244px] xs:size-[180px] size-[164px] rounded-full flex items-center justify-center bg-gradient-to-br from-purple-darkness to-yellow-ripe">
+                    <Image src={MyImage} alt="Waleed Georgy image" priority={true} className="md:size-44 lg:size-60 xs:size-44 size-40 rounded-full object-cover" style={{ overflowClipMargin: "unset" }} />
                 </div>
                 <Image src={Signature} alt="Waleed's signature" className="w-44 xs:w-60 z-10" />
             </div>
