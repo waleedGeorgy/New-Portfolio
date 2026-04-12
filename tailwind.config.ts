@@ -32,29 +32,23 @@ export default {
           darkness: "#7c3aed",
         },
         yellow: {
-          ripe: "#fbbf24"
+          ripe: "#fbbf24",
         },
         border: "rgb(255 255 255 / 0.05)",
       },
       animation: {
-        "grow_in": "grow_in 0.5s ease-in-out",
-        wiggle: 'wiggle 2s ease-in-out infinite',
+        wiggle: "wiggle 2s ease-in-out infinite",
       },
       keyframes: {
-        grow_in: {
-          '0%': { scale: '0%' },
-          '100%': { scale: '100%' },
-        },
-
         wiggle: {
-          '0%, 100%': {
-              transform: 'rotate(-2deg)'
+          "0%, 100%": {
+            transform: "rotate(-2deg)",
           },
-          '50%': {
-              transform: 'rotate(2deg)'
+          "50%": {
+            transform: "rotate(2deg)",
           },
         },
-      }
+      },
     },
   },
   plugins: [],

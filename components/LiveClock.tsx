@@ -7,22 +7,22 @@ const LiveClock = ({ timeZone }: { timeZone: string }) => {
 
     useEffect(() => {
         const updateTime = () => {
-            const currentTime = new Date().toLocaleString([], { timeZone: timeZone, hour: "2-digit", minute: "2-digit", hour12: false });
+            const currentTime = new Date().toLocaleString([], { timeZone, hour: "2-digit", minute: "2-digit", hour12: false });
             setTime(currentTime);
         };
 
-        const interval = setInterval(updateTime, 1000);
-        return () => clearInterval(interval);
+        const clockInterval = setInterval(updateTime, 60 * 1000);
+        return () => clearInterval(clockInterval);
     }, [timeZone]);
 
     return (
         <>
             {time ?
-                <time className="text-lg tracking-wide md:text-xl lg:text-2xl text-gray-300 font-homenaje">
-                    Local time: {time}
+                <time className="text-lg lg:text-xl text-gray-300">
+                    Local time: <span className="text-gray-100">{time}</span>
                 </time>
                 :
-                <p className="text-gray-400 text-lg md:text-xl lg:text-2xl flex flex-row items-center gap-1.5 font-homenaje">
+                <p className="text-gray-400 text-lg lg:text-xl flex items-center gap-1.5">
                     Loading local time
                     <CgSpinnerTwoAlt className="animate-spin" />
                 </p>

@@ -2,20 +2,20 @@ import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { menuSlide } from "./animation";
-import Curve from "./curve";
-import NavLink from "./nav-link";
+import { menuSlide } from "./menuAnimations";
+import Curve from "./Curve";
+import NavLink from "./NavLink";
 import GitHub from "@/public/images/stack/github.svg";
 import Signature from "@/public/images/signature.png";
 
-const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>>; }) => {
+const FullScreenMenu = ({ setOpen }: { setOpen: Dispatch<SetStateAction<boolean>> }) => {
   return (
     <motion.div
       variants={menuSlide}
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen w-full bg-[#101314] fixed top-0 right-0 text-primary-foreground z-40"
+      className="h-screen w-full bg-[#101314] fixed top-0 right-0 z-40"
     >
       <Image src={Signature} alt="Signature of Waleed Georgy" className="hidden xs:inline-block xs:w-48 sm:w-64 relative top-12 left-12" />
       {/* Menu list*/}

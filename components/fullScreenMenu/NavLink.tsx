@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { scale, slide } from "./animation";
+import { scale, slide } from "./menuAnimations";
 
 interface NavLinkProps {
   data: {

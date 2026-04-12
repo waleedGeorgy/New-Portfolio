@@ -5,14 +5,14 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="animate-grow_in shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-50 p-5 rounded-full bg-blue-cosmos hover:brightness-150 cursor-pointer transition-all duration-300 ease-in-out flex items-center gap-3"
+      className="shadow-md shadow-black/50 fixed right-4 top-5 m-5 z-50 p-5 rounded-full bg-blue-cosmos hover:brightness-150 cursor-pointer transition-all duration-300 ease-in-out flex items-center gap-3"
     >
       <div className="relative flex items-center justify-center">
         {/* Hamburger icon */}
         <div className="flex flex-col gap-y-1.5 transform transition-all duration-300 origin-center overflow-hidden">
           <div
             className={cn(
-              "bg-white h-0.5 w-5 transform transition-all duration-300 origin-left",
+              "bg-gray-100 h-0.5 w-5 transform transition-all duration-300 origin-left",
               {
                 "translate-x-10": open,
               }
@@ -20,7 +20,7 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
           />
           <div
             className={cn(
-              "bg-white h-0.5 w-5 rounded transform transition-all duration-300 delay-75",
+              "bg-gray-100 h-0.5 w-5 rounded transform transition-all duration-300 delay-75",
               {
                 "translate-x-10": open,
               }
@@ -28,7 +28,7 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
           />
           <div
             className={cn(
-              "bg-white h-0.5 w-2.5 transform transition-all duration-300 origin-left delay-150",
+              "bg-gray-100 h-0.5 w-2.5 transform transition-all duration-300 origin-left delay-150",
               "hover:w-7",
               {
                 "translate-x-10": open,
@@ -46,7 +46,7 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
           >
             <div
               className={cn(
-                "absolute bg-white h-0.5 w-5 transform transition-all duration-500 rotate-0 delay-300",
+                "absolute bg-gray-100 h-0.5 w-5 transform transition-all duration-500 rotate-0 delay-300",
                 {
                   "rotate-45": open,
                 }
@@ -54,7 +54,7 @@ export default function ToggleButton({ open, setOpen }: { open: boolean; setOpen
             />
             <div
               className={cn(
-                "absolute bg-white h-0.5 w-5 transform transition-all duration-500 -rotate-0 delay-300",
+                "absolute bg-gray-100 h-0.5 w-5 transform transition-all duration-500 -rotate-0 delay-300",
                 {
                   "-rotate-45": open,
                 }

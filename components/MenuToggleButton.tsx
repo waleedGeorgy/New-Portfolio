@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import FullScreenMenu from "./fullScreenMenu/full-screen-menu";
-import ToggleButton from "./fullScreenMenu/toggle-button";
+import ToggleButton from "./fullScreenMenu/MenuToggleButton";
+import FullScreenMenu from "./fullScreenMenu/FullScreenMenu";
 
 export default function MenuToggleButton() {
     const [menuOpen, setMenuOpen] = useState(false);
