@@ -204,12 +204,12 @@ const ParticleBackground = () => {
                 }} />
             </div>
 
-            <style jsx>{`
-  @keyframes pulse {
-    0%, 100% { opacity: 0.2; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.5); }
-  }
-`}</style>
+            <style jsx>
+                {`@keyframes pulse {
+                    0%, 100% { opacity: 0.2; transform: scale(1); }
+                    50% { opacity: 0.8; transform: scale(1.5); }
+                }`}
+            </style>
         </>
     )
 }
