@@ -22,7 +22,7 @@ export default function ProfileSection() {
             </MagneticEffect>
             {/* Live Clock */}
             <div className="relative hidden md:inline-block">
-                <LiveClock timeZone="Europe/Moscow" />
+                <LiveClock />
             </div>
         </aside>
     );
