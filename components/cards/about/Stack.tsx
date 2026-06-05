@@ -14,7 +14,7 @@ export default function Stack() {
                         </div>
                         {/* Individual stack item */}
                         <div className="flex flex-wrap items-center gap-3">
-                            {item.stack.map((entry) => (
+                            {item.stack.map(entry => (
                                 <Tooltip
                                     key={entry.id}
                                     title={entry.title}

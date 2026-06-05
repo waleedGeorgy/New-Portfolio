@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PT_Sans, Homenaje } from "next/font/google";
 import "./globals.css";
 
-const MainFont = PT_Sans({ weight: "400", subsets: ["latin"] });
-const HomenajeFont = Homenaje({ weight: "400", subsets: ["latin"], variable: "--font-homenaje" });
+const MainFont = PT_Sans({ weight: "400", subsets: ["latin"], display: "swap" });
+const HomenajeFont = Homenaje({ weight: "400", subsets: ["latin"], variable: "--font-homenaje", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Waleed Georgy",

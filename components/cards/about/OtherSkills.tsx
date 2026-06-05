@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { BsStarFill } from "react-icons/bs"
 import Card from "@/components/Card"
 
@@ -22,7 +22,7 @@ const SkillItem = ({ skill, level }: { skill: string; level: number }) => {
     return (
         <div className="flex flex-row items-center gap-3">
             <h3 className="text-gray-400 w-36">{skill}</h3>
-            {[...Array<React.ReactNode>(level)].map((_, id) => (
+            {[...Array<ReactNode>(level)].map((_, id) => (
                 <BsStarFill key={id} className="text-yellow-ripe" />
             ))}
         </div>

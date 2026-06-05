@@ -11,11 +11,11 @@ export default function Curve() {
     },
     enter: {
       d: targetPath,
-      transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 1, ease: [0.76, 0, 0.24, 1] as const },
     },
     exit: {
       d: initialPath,
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] as const },
     },
   };
 

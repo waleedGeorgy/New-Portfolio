@@ -14,10 +14,10 @@ const Tooltip = ({ title, icon }: { title: string, icon: string }) => {
             <div className="size-7">
                 <Image src={icon} alt={title} className="size-full overflow-clip object-contain" />
             </div>
-            <div className={`
-                absolute bg-zinc-950 px-2.5 py-0.5 rounded-md pointer-events-none transition-all duration-300
-                ${hovered ? "opacity-100 -translate-y-9 scale-100" : "opacity-0 translate-y-0 scale-0"}
-            `}>
+            <div
+                className={`absolute bg-zinc-950 px-2.5 py-0.5 rounded-md pointer-events-none transition-all duration-300
+                ${hovered ? "opacity-100 -translate-y-9 scale-100" : "opacity-0 translate-y-0 scale-0"}`}
+            >
                 <p className="text-gray-200 whitespace-nowrap">{title}</p>
             </div>
         </div>
