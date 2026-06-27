@@ -4,6 +4,7 @@ import GroovityImage from "@/public/images/projects_gallery/groovity.png";
 import SemicolonImage from "@/public/images/projects_gallery/semicolon.png";
 import ChatterboxImage from "@/public/images/projects_gallery/chatterbox.png";
 import MnemoImage from "@/public/images/projects_gallery/mnemo.png";
+import SummonImage from "@/public/images/projects_gallery/summon.png";
 
 export const projectsList = [
   {
@@ -98,5 +99,22 @@ export const projectsList = [
     ],
     description:
       "A web app for taking notes. Offers full CRUD capabilities, as well as AI note summarization and question answering. Supports full log in and sign up flows.",
+  },
+  {
+    image: SummonImage,
+    title: "Summon",
+    link: "https://summon-azure.vercel.app",
+    tag: "A visual-based AI agent builder",
+    techStack: [
+      "NodeJS",
+      "TypeScript",
+      "NextJS",
+      "Tailwind",
+      "Convex",
+      "Arcjet",
+      "Clerk",
+    ],
+    description:
+      "A web app for building AI agents workflows, using intuitive graph-based editor. Customize and generate your agents, and chat wth them using simple UI. Supports the ability to edit workflows and publish agents, build workflows from templates, as well as free and unlimited tiers.",
   },
 ];
