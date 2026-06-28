@@ -115,6 +115,6 @@ export const projectsList = [
       "Clerk",
     ],
     description:
-      "A web app for building AI agents workflows, using intuitive graph-based editor. Customize and generate your agents, and chat wth them using simple UI. Supports the ability to edit workflows and publish agents, build workflows from templates, as well as free and unlimited tiers.",
+      "A web app for building AI agents workflows, using intuitive graph-based editor. Customize and generate your agents, and chat wth them using simple UI. Supports the ability to edit workflows, publish agents, build workflows from templates, free and unlimited tiers, etc.",
   },
 ];
