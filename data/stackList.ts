@@ -9,8 +9,10 @@ import Next from "@/public/images/stack/nextdotjs.svg";
 import TanStack from "@/public/images/stack/tanstack.png";
 import Node from "@/public/images/stack/nodedotjs.svg";
 import Express from "@/public/images/stack/express.svg";
+import Hono from "@/public/images/stack/hono.svg";
 import PostgreSQL from "@/public/images/stack/postgresql.svg";
 import MongoDB from "@/public/images/stack/mongodb.svg";
+import Redis from "@/public/images/stack/redis.svg";
 import Convex from "@/public/images/stack/convex-logo.png";
 import Prisma from "@/public/images/stack/prisma.svg";
 import Drizzle from "@/public/images/stack/drizzle.svg";
@@ -30,6 +32,7 @@ import Git from "@/public/images/stack/git.svg";
 import GitHub from "@/public/images/stack/github.svg";
 import Postman from "@/public/images/stack/postman.svg";
 import Docker from "@/public/images/stack/docker.svg";
+import RestAPI from "@/public/images/stack/rest-api.svg";
 import GraphQL from "@/public/images/stack/graphql.svg";
 import JSON from "@/public/images/stack/json.svg";
 import Markdown from "@/public/images/stack/markdown.svg";
@@ -123,6 +126,11 @@ export const myStack = [
         title: "EJS",
         icon: EJS,
       },
+      {
+        id: 3,
+        title: "Hono",
+        icon: Hono,
+      },
     ],
   },
   {
@@ -165,16 +173,21 @@ export const myStack = [
       },
       {
         id: 4,
+        title: "Redis",
+        icon: Redis,
+      },
+      {
+        id: 5,
         title: "Neon",
         icon: Neon,
       },
       {
-        id: 5,
+        id: 6,
         title: "Prisma",
         icon: Prisma,
       },
       {
-        id: 6,
+        id: 7,
         title: "Drizzle",
         icon: Drizzle,
       },
@@ -230,16 +243,21 @@ export const myStack = [
       },
       {
         id: 4,
+        title: "Rest API",
+        icon: RestAPI,
+      },
+      {
+        id: 5,
         title: "GraphQL",
         icon: GraphQL,
       },
       {
-        id: 5,
+        id: 6,
         title: "JSON",
         icon: JSON,
       },
       {
-        id: 6,
+        id: 7,
         title: "Markdown",
         icon: Markdown,
       },
