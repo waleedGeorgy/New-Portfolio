@@ -27,14 +27,13 @@ import SASS from "@/public/images/stack/sass.svg";
 import TensorFlow from "@/public/images/stack/tensorflow.svg";
 import PyTorch from "@/public/images/stack/pytorch.svg";
 import Scikit from "@/public/images/stack/scikitlearn.svg";
-import HuggingFace from "@/public/images/stack/hf-logo.webp";
 import Git from "@/public/images/stack/git.svg";
 import GitHub from "@/public/images/stack/github.svg";
 import Postman from "@/public/images/stack/postman.svg";
+import Bruno from "@/public/images/stack/bruno.svg";
 import Docker from "@/public/images/stack/docker.svg";
 import RestAPI from "@/public/images/stack/rest-api.svg";
 import GraphQL from "@/public/images/stack/graphql.svg";
-import JSON from "@/public/images/stack/json.svg";
 import Markdown from "@/public/images/stack/markdown.svg";
 
 export const myStack = [
@@ -181,15 +180,45 @@ export const myStack = [
         title: "Neon",
         icon: Neon,
       },
+    ],
+  },
+  {
+    name: "ORMs",
+    stack: [
       {
-        id: 6,
+        id: 0,
         title: "Prisma",
         icon: Prisma,
       },
       {
-        id: 7,
+        id: 1,
         title: "Drizzle",
         icon: Drizzle,
+      },
+    ],
+  },
+  {
+    name: "APIs",
+    stack: [
+      {
+        id: 0,
+        title: "Postman",
+        icon: Postman,
+      },
+      {
+        id: 1,
+        title: "Bruno",
+        icon: Bruno,
+      },
+      {
+        id: 2,
+        title: "Rest API",
+        icon: RestAPI,
+      },
+      {
+        id: 3,
+        title: "GraphQL",
+        icon: GraphQL,
       },
     ],
   },
@@ -211,15 +240,10 @@ export const myStack = [
         title: "Scikit-Learn",
         icon: Scikit,
       },
-      {
-        id: 3,
-        title: "HuggingFace",
-        icon: HuggingFace,
-      },
     ],
   },
   {
-    name: "Misc.",
+    name: "V. Control",
     stack: [
       {
         id: 0,
@@ -231,33 +255,18 @@ export const myStack = [
         title: "GitHub",
         icon: GitHub,
       },
+    ],
+  },
+  {
+    name: "Misc.",
+    stack: [
       {
-        id: 2,
-        title: "Postman",
-        icon: Postman,
-      },
-      {
-        id: 3,
+        id: 0,
         title: "Docker",
         icon: Docker,
       },
       {
-        id: 4,
-        title: "Rest API",
-        icon: RestAPI,
-      },
-      {
-        id: 5,
-        title: "GraphQL",
-        icon: GraphQL,
-      },
-      {
-        id: 6,
-        title: "JSON",
-        icon: JSON,
-      },
-      {
-        id: 7,
+        id: 1,
         title: "Markdown",
         icon: Markdown,
       },
